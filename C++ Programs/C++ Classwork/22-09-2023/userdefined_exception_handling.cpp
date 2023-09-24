@@ -25,7 +25,7 @@ int main()
 			cout<<div<<endl;
 		}
 	}
-	catch(char *e)
+	catch(const char *e)
 	{
 		cout<<e<<endl;
 	}
