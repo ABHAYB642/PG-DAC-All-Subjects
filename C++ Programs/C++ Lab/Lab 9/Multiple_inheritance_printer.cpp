@@ -77,6 +77,8 @@ int main()
 {
 	Laserprinter L(301,401,501);
 	L.print();	
+	
+	cout<<endl;
 	Laserprinter L1;
 	update(L1);	
 }

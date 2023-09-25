@@ -1,12 +1,11 @@
 #include<iostream>
 using namespace std;
-#include <exception> 
 
 class MyException: public exception{
 	public:
 		const char* what() const throw()
 		{
-			return " Attempted to divide by zero\n";
+			return " Attempted to divide by zero";
 		}
 };
 int main()
@@ -26,8 +25,8 @@ int main()
 			cout<<div<<endl;
 		}
 	}
-	catch(exception& e)
+	catch(const char *e)
 	{
-		cout<<e.what()<<endl;
+		cout<<e<<endl;
 	}
 }
