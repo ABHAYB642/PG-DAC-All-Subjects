@@ -1,0 +1,359 @@
+
+
+
+
+
+A C++ template is a powerful feature added to C++. It allows you to define the generic classes and generic functions and thus provides support for generic programming. Generic programming is a technique where generic types are used as parameters in algorithms so that they can work for a variety of data types.
+
+Function Template
+Generic functions use the concept of a function template. Generic functions are same logic/algo that can be applied to the various types of data.
+The type of the data that the function will operate  depends on the type of the data passed as a parameter.
+For example, sorting algorithm is implemented using a generic function, it can be implemented to an array of integers or array of floats.
+A Generic function is created by using the keyword template.
+template < class Ttype> 
+ret_type func_name(parameter_list)  
+{  
+    // body of function.  
+}  
+Where Ttype: It is a placeholder name for a data type used by the function. It is used within the function definition. It is only a placeholder that the compiler will automatically replace this placeholder with the actual data type.
+
+
+#include <iostream>  
+using namespace std;  
+template<class T>
+ T add(T &a,T &b)  
+{  
+    T result = a+b;  
+    return result;  
+      
+}  
+int main()  
+{  
+  int i =2;  
+  int j =3;  
+  float m = 2.3;  
+  float n = 1.2;  
+  cout<<"Addition of i and j is :"<<add(i,j);  
+  cout<<'\n';  
+  cout<<"Addition of m and n is :"<<add(m,n);  
+  return 0;  
+}  
+
+============================================================================
+Function Templates with Multiple Parameters
+We can use more than one generic type in the template function by using the comma to separate the list.
+
+template<class T1, class T2,.....>  
+return_type function_name (arguments of type T1, T2....)  
+{  
+    // body of function.  
+}  
+
+
+#include <iostream>  
+using namespace std;  
+template<class X,class Y> 
+void fun(X a,Y b)  
+{  
+    cout << "Value of a is : " <<a<< endl;  
+    cout << "Value of b is : " <<b<< endl;  
+}  
+  
+int main()  
+{  
+   fun(15,12.3);  
+   
+   return 0;  
+}  
+
+===================================================
+
+Overloading a Function Template
+We can overload the generic function means that the overloaded template functions can differ in the parameter list.
+
+
+
+#include <iostream>  
+using namespace std;  
+template<class X>
+ void fun(X a)  
+{  
+    std::cout << "Value of a is : " <<a<< std::endl;  
+}  
+template<class X,class Y>
+ void fun(X b ,Y c)  
+{  
+    std::cout << "Value of b is : " <<b<< std::endl;  
+    std::cout << "Value of c is : " <<c<< std::endl;  
+}  
+int main()  
+{  
+   fun(10);  
+   fun(20,30.5);  
+   return 0;  
+}  
+
+CLASS TEMPLATE
+Class Template can also be defined similarly to the Function Template. When a class uses the concept of Template, then the class is known as generic class.
+
+Syntax
+template<class Ttype>  
+class class_name  
+{  
+  .  
+  .  
+}  
+
+Ttype is a placeholder name which will be determined when the class is instantiated. We can define more than one generic data type using a comma-separated list. The Ttype can be used inside the class body.
+
+Now, we create an instance of a class
+
+class_name<type> ob;  
+
+type: It is the type of the data that the class is operating on.
+
+
+#include <iostream>  
+using namespace std;  
+template<class T>  
+class A   
+{  
+    public:  
+    T num1 = 5;  
+    T num2 = 6;  
+    void add()  
+    {  
+       cout << "Addition of num1 and num2 : " << num1+num2<<std::endl;  
+    }  
+      
+};  
+  
+int main()  
+{  
+    A<int> d;  
+    d.add();  
+    return 0;  
+}  
+
+
+CLASS TEMPLATE WITH MULTIPLE PARAMETERS
+We can use more than one generic data type in a class template, and each generic data type is separated by the comma.
+template<class T1, class T2, ......>   
+class class_name  
+{  
+   // Body of the class.  
+}  
+
+#include <iostream>  
+     using namespace std;  
+     template<class T1, class T2>  
+    class A   
+    {  
+         T1 a;  
+         T2 b;  
+         public:  
+        A(T1 x,T2 y)  
+       {  
+           a = x;  
+           b = y;  
+        }  
+           void display()  
+          {  
+                 cout << "Values of a and b are : " << a<<" ,"<<b<<std::endl;  
+           }  
+      };  
+  
+      int main()  
+     {  
+           A<int,float> d(5,6.5);  
+           d.display();  
+           return 0;  
+     }  
+=============================================
+template<class T, int size>  
+class array  
+{  
+	
+        T arr[size];           // automatic array initialization.  
+};  
+In the above case, the nontype template argument is size and therefore, template supplies the size of the array as an argument.
+
+Arguments are specified when the objects of a class are created:
+
+array<int, 15> t1;                        // array of 15 integers.  
+array<float, 10> t2;                    // array of 10 floats.   
+array<char, 4> t3;                      // array of 4 chars.           
+
+#include <iostream>  
+using namespace std;  
+template<class T, int size>  
+class A   
+{  
+    public:  
+    T arr[size];  
+    void insert()  
+    {  
+        int i =1;  
+        for (int j=0;j<size;j++)  
+        {  
+            arr[j] = i;  
+            i++;  
+        }  
+    }  
+      
+    void display()  
+    {  
+        for(int i=0;i<size;i++)  
+        {  
+         cout << arr[i] << " ";  
+        }  
+    }  
+};  
+int main()  
+{  
+    A<int,10> t1;  
+    t1.insert();  
+    t1.display();  
+    return 0;  
+}  
+
+Points to Remember
+
+C++ supports a powerful feature known as a template to implement the concept of generic programming.
+A template allows us to create a family of classes or family of functions to handle different data types.
+Template classes and functions eliminate the code duplication of different data types and thus makes the development easier and faster.
+Multiple parameters can be used in both class and function template.
+Template functions can also be overloaded.
+We can also use nontype arguments such as built-in or derived data types as template argument
+
+=============================================================================
+
+A nested class is a class that is declared in another class. The nested class is also a member variable of the enclosing class and has the same access rights as the other members.
+#include<iostream>
+using namespace std;
+class A {
+   public:
+   class B {
+      private:
+      int num;
+      public:
+      void getdata(int n) {
+         num = n;
+      }
+      void putdata() {
+         cout<<"The number is "<<num;
+      }
+   };
+};
+int main() {
+   cout<<"Nested classes in C++"<< endl;
+   A :: B obj;
+   obj.getdata(9);
+   obj.putdata();
+   return 0;
+}
+
+
+=========================================================
+enumeration 
+ enum is a working with set of elements using constant integer  values.the functionality of a particular element
+are accessing with the help of constant integer value.
+1)means counting
+2)enum keyword,userdefined datatype
+3)enum week{sunday,monday};//sunday=10
+fix values which we can give it to variable.
+
+#include<iostream>
+using namespace std;
+int main()
+ {
+   enum week {sunday=10,monday,tuesday};
+   enum week w;
+   w=monday;
+   cout<<w;
+   
+   
+  
+}
+ 
+
+====================================
+typedef keyword in C++ is used for aliasing existing data types, user-defined data types, and pointers to a more meaningful name. Typedefs allow you to give descriptive names to standard data types, which can also help you self-document your code. Mostly typedefs are used for aliasing, only if the predefined name is too long or complex to write again and again.  The unnecessary use of typedef is generally not a good practice.
+
+Syntax:
+
+
+typedef <current_name> <new_name>
+=========================================================
+#include<iostream>
+using namespace std;
+
+int main() {
+  typedef int a;
+  a num=10;
+  cout<<num;
+  
+}
+=========================================================
+#include<iostream>
+using namespace std;
+typedef struct emp
+{
+	int id;
+	float sal;
+}e;
+int main() {
+   e e1;
+   e1.id=1;
+   cout<<e1.id;
+  
+}
+
+#include <iostream>  
+using namespace std;
+typedef struct employee
+{
+	int id;
+}E;
+int main()  
+{ 
+	E e1;
+	E*	ptr=&e1;
+
+}  
+
+
+======================================
+
+namespace in c++
+
+
+#include<iostream>
+using namespace std;
+namespace first
+{
+	int a=10;
+	void display()
+	{
+		cout<<"hello";
+	}
+	
+};
+
+namespace second
+{
+	int a=20;
+	void display()
+	{
+		cout<<"bye";
+	}
+	
+};
+
+int main()
+{
+	second::display();
+	cout<<second::a;
+}  
+
+
