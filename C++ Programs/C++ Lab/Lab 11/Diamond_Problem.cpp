@@ -25,7 +25,7 @@ void library::display()
 {
 	cout<<"library name= "<<lname<<endl;
 }
- class distributor: virtual public library
+ class distributor:virtual public library
 {
 protected:
 	char dname[20];
@@ -48,7 +48,7 @@ void distributor::display()
 {
 	cout<<"distributor name= "<<dname<<endl;
 }
-class author: virtual public library
+class author:virtual public library
 {
 protected:
 	char aname[20];
@@ -85,8 +85,7 @@ book::book()
 	cout<<"in default of  book\n";
 	strcpy(title,"\0");
 }
-book::book(char * l,char * d,char * a,char * t)
-	:library(l),author(a),distributor(d)
+book::book(char * l,char * d,char * a,char * t):library(l),author(a),distributor(d)
 {
 	cout<<"in para of book\n";
 	strcpy(title,t);
