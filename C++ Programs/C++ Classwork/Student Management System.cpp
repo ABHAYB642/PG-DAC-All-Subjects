@@ -122,5 +122,3 @@ int main()
 	}while(ch!=0);
 	return 0;
 }
-n_Student_management_system.cpp
-Displaying n_Student_management_system.cpp.

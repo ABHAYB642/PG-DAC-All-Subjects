@@ -2,7 +2,7 @@
 using namespace std;
 #include<string.h>
 //array char pointer to string
-void display(char *a){
+void display(char *a[]){
 		for( int i=0; i<5;i++)
 	{
 	int x=strlen(*(a+i));
