@@ -1,0 +1,378 @@
+C:\Users\Dell>mysql --version
+mysql  Ver 8.0.34 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+C:\Users\Dell>mysql -u root -p
+Enter password: **********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.0.34 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| db1                |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use db1
+Database changed
+mysql> select database();
++------------+
+| database() |
++------------+
+| db1        |
++------------+
+1 row in set (0.00 sec)
+
+mysql> show tables from db1
+    -> ;
+Empty set (0.01 sec)
+
+mysql> create table t1(id int primary key,ename varchar(10));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc t1;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int         | NO   | PRI | NULL    |       |
+| ename | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> create table course (id int primary key auto_increment,name varchar(45),duration varchar(45),summary varchar(1024));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc course;
++----------+---------------+------+-----+---------+----------------+
+| Field    | Type          | Null | Key | Default | Extra          |
++----------+---------------+------+-----+---------+----------------+
+| id       | int           | NO   | PRI | NULL    | auto_increment |
+| name     | varchar(45)   | YES  |     | NULL    |                |
+| duration | varchar(45)   | YES  |     | NULL    |                |
+| summary  | varchar(1024) | YES  |     | NULL    |                |
++----------+---------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> insert into course values('java',3months,'devlopment');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into course (name,duration,summary)values('java',3months,'devlopment');
+ERROR 1054 (42S22): Unknown column '3months' in 'field list'
+mysql> insert into course (name,duration,summary)values('java','3months','devlopment');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into course values('cloud','3months','devlopment');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into course (name,duration,summary)values('cloud','3months','devlopment');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from course;
++----+-------+----------+------------+
+| id | name  | duration | summary    |
++----+-------+----------+------------+
+|  1 | java  | 3months  | devlopment |
+|  2 | cloud | 3months  | devlopment |
++----+-------+----------+------------+
+2 rows in set (0.00 sec)
+
+mysql> create table student (id int primary key auto_increment,namefirst varchar(45),namelast varchar(45),DOB date,emailID varchar(128));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc student;
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| id        | int          | NO   | PRI | NULL    | auto_increment |
+| namefirst | varchar(45)  | YES  |     | NULL    |                |
+| namelast  | varchar(45)  | YES  |     | NULL    |                |
+| DOB       | date         | YES  |     | NULL    |                |
+| emailID   | varchar(128) | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> insert into student (namefirst,namelast,DOB,emailID)values('sujit','pawar','2024-06-15','sujitpawar18599@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from student;
++----+-----------+----------+------------+---------------------------+
+| id | namefirst | namelast | DOB        | emailID                   |
++----+-----------+----------+------------+---------------------------+
+|  1 | sujit     | pawar    | 2024-06-15 | sujitpawar18599@gmail.com |
++----+-----------+----------+------------+---------------------------+
+1 row in set (0.00 sec)
+
+mysql> insert into student (namefirst,namelast,DOB,emailID)values('sujitt','pawarr','2023-04-15','jitpawar18599@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from student;
++----+-----------+----------+------------+---------------------------+
+| id | namefirst | namelast | DOB        | emailID                   |
++----+-----------+----------+------------+---------------------------+
+|  1 | sujit     | pawar    | 2024-06-15 | sujitpawar18599@gmail.com |
+|  2 | sujitt    | pawarr   | 2023-04-15 | jitpawar18599@gmail.com   |
++----+-----------+----------+------------+---------------------------+
+2 rows in set (0.00 sec)
+
+mysql> create student_phone (id int primary key,studentID int foreign key(studentID)references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student_phone (id int primary key,studentID int foreign key(studentID)references' at line 1
+mysql> create student_phone (id int primary key,studentID int foreign key(studentID) references student(id),number varchar(45),isActive bool);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student_phone (id int primary key,studentID int foreign key(studentID) reference' at line 1
+mysql> create student_phone (id int primary key,studentID int foreign key(studentid) references student(id),number varchar(45),isActive bool);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student_phone (id int primary key,studentID int foreign key(studentid) reference' at line 1
+mysql> create student_phone (id int primary key,studentID int,number varchar(45),isActive bool,foreign key(studentID) references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'student_phone (id int primary key,studentID int,number varchar(45),isActive bool' at line 1
+mysql> create table student_phone (id int primary key,studentID int foreign key(studentid) references student(id),number varchar(45),isActive bool);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key(studentid) references student(id),number varchar(45),isActive bool)' at line 1
+mysql> create table student_phone (id int primary key,studentID int,number varchar(45),isActive bool,foreign key(studentID) references student(id));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc student_phone;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| id        | int         | NO   | PRI | NULL    |       |
+| studentID | int         | YES  | MUL | NULL    |       |
+| number    | varchar(45) | YES  |     | NULL    |       |
+| isActive  | tinyint(1)  | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> insert into student_phone values (1,12,'7218552099',1);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`db1`.`student_phone`, CONSTRAINT `student_phone_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `student` (`id`))
+mysql> insert into student_phone values(1,12,'7218552099',1);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`db1`.`student_phone`, CONSTRAINT `student_phone_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `student` (`id`))
+mysql> alter table student modify id int;
+ERROR 1833 (HY000): Cannot change column 'id': used in a foreign key constraint 'student_phone_ibfk_1' of table 'db1.student_phone'
+mysql> drop table student;
+ERROR 3730 (HY000): Cannot drop table 'student' referenced by a foreign key constraint 'student_phone_ibfk_1' on table 'student_phone'.
+mysql> drop table student_phone;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> drop table student;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> show tables;
++---------------+
+| Tables_in_db1 |
++---------------+
+| course        |
+| t1            |
++---------------+
+2 rows in set (0.00 sec)
+
+mysql> create table student (id int primary key,namefirst varchar(45),namelast varchar(45),DOB date,emailID varchar(128));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into student (id,namefirst,namelast,DOB,emailID)values(1,'sujitt','pawarr','2023-04-15','jitpawar18599@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student (id,namefirst,namelast,DOB,emailID)values(2,'sujit','pawar','2024-06-15','sujitpawar18599@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from student;
++----+-----------+----------+------------+---------------------------+
+| id | namefirst | namelast | DOB        | emailID                   |
++----+-----------+----------+------------+---------------------------+
+|  1 | sujitt    | pawarr   | 2023-04-15 | jitpawar18599@gmail.com   |
+|  2 | sujit     | pawar    | 2024-06-15 | sujitpawar18599@gmail.com |
++----+-----------+----------+------------+---------------------------+
+2 rows in set (0.00 sec)
+
+mysql> create table student_phone (id int primary key,studentID int,number varchar(45),isActive bool,foreign key(studentID) references student(id));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql>
+mysql> insert into student_phone values(1,12,'7218552099',1);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`db1`.`student_phone`, CONSTRAINT `student_phone_ibfk_1` FOREIGN KEY (`studentID`) REFERENCES `student` (`id`))
+mysql> desc student;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| id        | int          | NO   | PRI | NULL    |       |
+| namefirst | varchar(45)  | YES  |     | NULL    |       |
+| namelast  | varchar(45)  | YES  |     | NULL    |       |
+| DOB       | date         | YES  |     | NULL    |       |
+| emailID   | varchar(128) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> desc student_phone;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| id        | int         | NO   | PRI | NULL    |       |
+| studentID | int         | YES  | MUL | NULL    |       |
+| number    | varchar(45) | YES  |     | NULL    |       |
+| isActive  | tinyint(1)  | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from student;
++----+-----------+----------+------------+---------------------------+
+| id | namefirst | namelast | DOB        | emailID                   |
++----+-----------+----------+------------+---------------------------+
+|  1 | sujitt    | pawarr   | 2023-04-15 | jitpawar18599@gmail.com   |
+|  2 | sujit     | pawar    | 2024-06-15 | sujitpawar18599@gmail.com |
++----+-----------+----------+------------+---------------------------+
+2 rows in set (0.00 sec)
+
+mysql> insert into student_phone values(1,1,'7218552099',1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> create table student_address(ID int primary key,studentID int,address varchar(128),uniquenotnullforeign key(studentID)references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key(studentID)references student(id))' at line 1
+mysql> create table student_address(ID int primary key,studentID int,address varchar(128),unique not nullforeign key(studentID)references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not nullforeign key(studentID)references student(id))' at line 1
+mysql> create table student_address(ID int primary key,studentID int,address varchar(128),unique not null foreign key(studentID) references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not null foreign key(studentID) references student(id))' at line 1
+mysql> create table student_address(ID int primary key,studentID int,address varchar(128),unique key not null foreign key(studentID) references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not null foreign key(studentID) references student(id))' at line 1
+mysql> create table student_address(ID int primary key,studentID int,address varchar(128),unique not null foreign key(studentID) references student(id));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'not null foreign key(studentID) references student(id))' at line 1
+mysql> create table student_address(ID int primary key,studentID int unique not null,address varchar(128),foreign key(studentID) references student(id));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc student_address;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| ID        | int          | NO   | PRI | NULL    |       |
+| studentID | int          | NO   | UNI | NULL    |       |
+| address   | varchar(128) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into student_address values (1,1,'pune');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student_address values (1,2,'pune');
+ERROR 1062 (23000): Duplicate entry '1' for key 'student_address.PRIMARY'
+mysql> insert into student_address values (2,1,'pune');
+ERROR 1062 (23000): Duplicate entry '1' for key 'student_address.studentID'
+mysql> insert into student_address values (2,2,'pune');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> create table faculty(ID int primary key,namefirst varchar(45),namelast varchar(45),DOB date,emailID varchar(128));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc faculty;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| ID        | int          | NO   | PRI | NULL    |       |
+| namefirst | varchar(45)  | YES  |     | NULL    |       |
+| namelast  | varchar(45)  | YES  |     | NULL    |       |
+| DOB       | date         | YES  |     | NULL    |       |
+| emailID   | varchar(128) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> insert into faculty values(3,'saleel','bagde','1985-03-15','saleelbagde@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from faculty;
++----+-----------+----------+------------+-----------------------+
+| ID | namefirst | namelast | DOB        | emailID               |
++----+-----------+----------+------------+-----------------------+
+|  3 | saleel    | bagde    | 1985-03-15 | saleelbagde@gmail.com |
++----+-----------+----------+------------+-----------------------+
+1 row in set (0.00 sec)
+
+mysql> create table faculty_phone(ID int primary key,facultyID int,number varchar(10),foreign key(facultyID) references faculty(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc faculty_phone
+    -> ;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| ID        | int         | NO   | PRI | NULL    |       |
+| facultyID | int         | YES  | MUL | NULL    |       |
+| number    | varchar(10) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> create faculty_address(ID int primary key,facultyID int unique not ull,address varchar(128),foreign key(facultyID)references faculty(ID));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'faculty_address(ID int primary key,facultyID int unique not ull,address varchar(' at line 1
+mysql> create table faculty_address(ID int primary key,facultyID int unique not null,address varchar(128),foreign key(facultyID)references faculty(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc faculty_address
+    -> ;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| ID        | int          | NO   | PRI | NULL    |       |
+| facultyID | int          | NO   | UNI | NULL    |       |
+| address   | varchar(128) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into faculty_address values(1,3,'puneiet');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into faculty_address values(1,4,'puneiet');
+ERROR 1062 (23000): Duplicate entry '1' for key 'faculty_address.PRIMARY'
+mysql> insert into faculty_phone values(1,4,'9997899789');
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`db1`.`faculty_phone`, CONSTRAINT `faculty_phone_ibfk_1` FOREIGN KEY (`facultyID`) REFERENCES `faculty` (`ID`))
+mysql> insert into faculty_phone values(4,3,'9997899789');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> create table modules(ID int primary key,name varchar (128),duration int);
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> drop table course;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create table course (ID int primary key,name varchar(45),duration varchar(45),summary varchar(1024));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> create table course_modules(ID int primary key,courseID int,moduleID int,foreign key(courseID)references course(ID);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> create table course_modules(ID int primary key,courseID int,moduleID int,foreign key(courseID)references course(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> drop course_modules;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'course_modules' at line 1
+mysql> drop table course_modules;
+Query OK, 0 rows affected (0.02 sec)
+
+
+mysql> create table course_modules(ID int primary key,courseID int,moduleID int,foreign key(courseID)references course(ID),foreign key(moduleID)references modules(ID));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create table student_qualifications(ID int primary key,studentID int,name varchar(128),college varchar(128),university varchar(128),marks varchar(45),year int,foreign key(studentID)references student(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+
+mysql> create table faculty_qualifications(ID int primary key,facultyID int,name varchar(128),college varchar(128),university varchar(128),marks varchar(45),foreign key(facultyID)references faculty(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table course_batches(ID int primary key,name varchar(45),courseID int,starton date,endson date,capacity int,foreign key(courseID)references course(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table batch_students(ID int primary key,batchID int,studentID int,foreign key(studentID)references student(ID),foreign key(batchID)references course_batches(ID));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> create table student_cards(ID int primary key,studentID int,name varchar(45),isActive bool,foreign key(studentID)references student(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table student_order(ID int primary key,studentID int,date date,amount int,foreign key(studentID)references student(ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql>
