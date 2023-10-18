@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//1st coding session
 int main(){
 int rows,i,j;
 cout<<"Enter the number of rows: ";
