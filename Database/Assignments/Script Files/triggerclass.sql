@@ -12,15 +12,7 @@ end $
 delimiter ; */
 
 
-drop trigger if exists tr1;
-delimiter $
-create trigger tr1 before insert on d for each row 
-BEGIN
-    declare z int;
-	select max(c1) +1 into z from d;
-	set new.c1=z;
-end $
-delimiter ;
+
 
 
 	 
