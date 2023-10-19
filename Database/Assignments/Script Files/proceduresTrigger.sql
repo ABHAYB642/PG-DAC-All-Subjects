@@ -368,3 +368,12 @@ BEGIN
 	set new.c2 = upper(new.c2);
 end  $
 delimiter ;
+
+drop trigger if exists tr1;
+delimiter $
+create trigger tr1 before update on a1 for each row 
+begin 
+   insert into b1 values(new.c1);
+   
+end $
+delimiter ;
