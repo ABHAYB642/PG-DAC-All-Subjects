@@ -171,4 +171,130 @@ end if;
 
 end b1 $
 delimiter ;
+
+drop procedure if exists pro1;
+delimiter $
+create procedure pro1()
+BEGIN
+	declare _sal int;
+	declare _ename varchar(40);
+
+	declare c1 cursor for select ename,sal from emp order by sal desc limit 5;
+	declare exit handler for 1329 select "EOF";
+	open c1;
+		lb:loop
+	    fetch c1 into _ename,_sal;
+		
+	    select _ename,_sal;
+		end loop lb;
+	close c1;
+end $
+delimiter ;
+
+
+drop procedure if exists top5Salary;
+delimiter $
+create procedure top5Salary()
+BEGIN
+	declare _salary int;
+	declare count1 int;
+	declare c1 cursor for select distinct sal from emp order by sal desc;
+	set count1 = 0;
+	open c1;
+	drop table if exists top5Salary;
+	create table top5Salary (sal int);
+	loop1:loop
+		set count1 = count1 + 1;
+		if count1 <= 5 then
+			fetch c1 into _salary;
+			insert into top5Salary values (_salary);
+		ELSE
+			leave loop1;
+		end if;
+	end loop loop1;
+	close c1;
+	select * from top5Salary;
+end $
+delimiter ;
+
+1.	Create the following table named (emp10, emp20, and emp30) which have the same structure of emp table.
+Write a procedure to split employee records from emp table according to their department numbers and insert those records in the appropriate table using cursor.
+drop procedure if exists split_EmpData;
+delimiter $
+create procedure split_EmpData()
+BEGIN
+	declare _EMPNO,_MGR,_SAL,_COMM,_DEPTNO,_BONUSID int;     
+	declare _ENAME,_GENDER,_JOB,_PHONE,_USERNAME,_PWD varchar(50); 
+	declare _HIREDATE date; 
+	declare _isActive bool;
+	declare c1 cursor for select * from emp;
+	declare exit handler for 1329 select "Exception is handled";
+	drop table if exists emp10;
+	drop table if exists emp20;
+	drop table if exists emp30;
+	create table emp10 like emp;
+	create table emp20 like emp;
+	create table emp30 like emp;
+	
+	open c1;
+	loop10:loop
+		
+		fetch c1 into _EMPNO,_ENAME,_GENDER,_JOB,_MGR,_HIREDATE,_SAL,_COMM,_DEPTNO,_BONUSID,
+		_USERNAME,_PWD,_PHONE,_isActive;
+		
+		if(_deptno =10) THEN
+			insert into emp10 values(_EMPNO,_ENAME,_GENDER,_JOB,_MGR,_HIREDATE,_SAL,_COMM,_DEPTNO,_BONUSID,
+				_USERNAME,_PWD,_PHONE,_isActive);
+			
+		elseif (_deptno =20) THEN
+			insert into emp20 values(_EMPNO,_ENAME,_GENDER,_JOB,_MGR,_HIREDATE,_SAL,_COMM,_DEPTNO,_BONUSID,
+				_USERNAME,_PWD,_PHONE,_isActive);
+		
+		elseif (_deptno =30) THEN
+			insert into emp30 values(_EMPNO,_ENAME,_GENDER,_JOB,_MGR,_HIREDATE,_SAL,_COMM,_DEPTNO,_BONUSID,
+				_USERNAME,_PWD,_PHONE,_isActive);
+		
+		elseif(_deptno !=10 and _deptno !=20 and _deptno !=30) THEN
+			select "Employee department is different than 10 20 and 30";
+			
+		end if;
+	end loop loop10;
+	close c1;
+	select _EMPNO,_ENAME,_GENDER,_JOB,_MGR,_HIREDATE,_SAL,_COMM,_DEPTNO,_BONUSID,
+				_USERNAME,_PWD,_PHONE,_isActive from emp10;
+	select * from emp20;
+	select * from emp30;
+
+end $ 
+delimiter ;
+
 */
+
+drop procedure if exists pro4;
+delimiter $
+drop table if exists String2;
+create table String2 (c1 varchar(100));
+create procedure pro4()
+begin
+	declare name1 varchar(10);
+    declare job1 varchar(20);
+	declare maxRow int;
+    declare ct int;
+    declare String1 varchar(100);
+    set ct := 1;
+    select max(r1) into maxRow from (select row_number() over() r1 from emp) t1;
+	loop2:loop
+		if ct<=maxRow then
+            select ename into name1 from (select ename,row_number() over() r1 from emp) t1 where r1=ct;
+            select job into job1 from (select job,row_number() over() r1 from emp) t1 where r1=ct;
+            select concat(substring(name1,1,1),'(',substring(name1,2),') is ',job1) into String1;
+            insert into String2 values (String1);
+            set ct := ct + 1;
+		else
+			leave loop2;
+		end if;
+	end loop loop2;
+    select * from string2;
+end $
+delimiter ;
+
