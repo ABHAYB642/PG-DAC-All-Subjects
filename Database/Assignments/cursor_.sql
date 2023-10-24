@@ -270,31 +270,6 @@ delimiter ;
 
 */
 
-drop procedure if exists pro4;
-delimiter $
-drop table if exists String2;
-create table String2 (c1 varchar(100));
-create procedure pro4()
-begin
-	declare name1 varchar(10);
-    declare job1 varchar(20);
-	declare maxRow int;
-    declare ct int;
-    declare String1 varchar(100);
-    set ct := 1;
-    select max(r1) into maxRow from (select row_number() over() r1 from emp) t1;
-	loop2:loop
-		if ct<=maxRow then
-            select ename into name1 from (select ename,row_number() over() r1 from emp) t1 where r1=ct;
-            select job into job1 from (select job,row_number() over() r1 from emp) t1 where r1=ct;
-            select concat(substring(name1,1,1),'(',substring(name1,2),') is ',job1) into String1;
-            insert into String2 values (String1);
-            set ct := ct + 1;
-		else
-			leave loop2;
-		end if;
-	end loop loop2;
-    select * from string2;
-end $
-delimiter ;
+
+
 
