@@ -24,7 +24,8 @@ public class PersonService {
 		System.out.println("Enter Mobile: ");
 		String mb=sc.next();
 		parr[cnt]=new Person(id,nm,mb);
-		cnt++;		
+		cnt++;
+		sc.close();
 	}
 	public static void displayAll() {
 		for(int i=0;i<cnt;i++) {
@@ -59,18 +60,78 @@ public class PersonService {
 		}
 		return null;
 	}
-	public static int updateMobile(int id,String mob)
+	public static boolean updateMobile(int id,String mob)
 	{
-		for(int i=0;i<cnt;i++) {
-			if(parr[i].getPid()==id) {
-				parr[i].setMobile(mob);
-				return 1;
+//		for(int i=0;i<cnt;i++) {
+//			if(parr[i].getPid()==id) {
+//				parr[i].setMobile(mob);
+//				return 1;
+//			}
+//			
+//		}
+		Person P =searbyID(id);
+		if(P!=null)
+		{
+		    System.out.println("Do you really want to update it");
+			System.out.println(P.getMob()+" to "+mob);
+			Scanner sc=new Scanner(System.in);
+			String ans=sc.next();
+			
+			
+			sc.close();
+			if(ans.equals("yes"));
+			{
+				P.setMobile(mob);
+				return true;
+				
 			}
 			
 		}
-		return -1;
+		
+		return false;
 	}
-	
+	public static boolean deletebyId(int id)
+	{
+		int i=0;
+		boolean flag =false;
+		for(i=0;i<cnt;i++)
+		{
+			if(parr[i].getPid()==id)
+			{
+				flag=true;
+				break;
+			}	
+		}
+//		for(Person P:parr)
+//		{
+//			if(P.getPid()==id)
+//			{
+//				flag=true;
+//				break;
+//			}
+//		}
+		
+		if(flag)
+		{
+			System.out.println("Do you really want to Delete it");
+			System.out.println(parr[i]);
+			Scanner sc=new Scanner(System.in);
+			String ans=sc.next();
+			if(ans.equals("Yes"))
+			{
+				for(int j=i;j<cnt;j++)
+				{
+					parr[j]=parr[j+1];
+				}
+				cnt--;
+				return true;
+				
+			}
+			sc.close();
+		}
+		return false;
+		
+	}
 	
 	
 }

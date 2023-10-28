@@ -12,7 +12,7 @@ public class TestPersonArr {
 		{
 			System.out.println(" 1.Add new Person \n 2.Display all person \n 3.Display by id \n 4.Update Mobile By id ");
 			
-			System.out.print(" 5.Dislay by name \n 6.EXIT \n");
+			System.out.print(" 5.Dislay by name \n 6.Delete by id 7.EXIT \n");
 			
 			System.out.println("Enter choice");
 			choice=sc.nextInt();
@@ -43,8 +43,8 @@ public class TestPersonArr {
 				int id1=sc.nextInt();
 				System.out.println("Enter Person Updated MobileNo");
 				String mob=sc.next();
-				int flag=PersonService.updateMobile(id1,mob);
-				if(flag==1) {
+				boolean flag=PersonService.updateMobile(id1,mob);
+				if(flag) {
 					System.out.println("Update Successfull");
 				}
 				else {
@@ -77,7 +77,23 @@ public class TestPersonArr {
 					System.out.println("Person not found ");
 				}
 				break;
+				
 			case 6:
+				System.out.println("Enter id ");
+			    id =sc.nextInt();
+			    boolean status = PersonService.deletebyId(id);
+			    if (status)
+			    {
+			      System.out.println("Deleted Succesfully ");
+			      
+			    }
+			    else
+			    {
+			    	System.out.println("Id Not Found");
+			    }
+				break;
+				
+			case 7:
 				System.out.println("Exited");
 				System.exit(0);
 				break;
@@ -85,7 +101,7 @@ public class TestPersonArr {
 				System.out.println("Again Enter Valid choice !");
 			}
 			
-		}while(choice!=6);
+		}while(choice!=7);
 		sc.close();
 	}
 
