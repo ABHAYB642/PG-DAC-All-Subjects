@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
-public class PersonService {
-	static Person[] parr;
-	static int cnt;
-	static {
-		parr=new Person[100];
-		parr[0]=new Person(12,"Sejal","4444");
-		parr[1]=new Person(13,"Ashu","5555");
+public class PersonService
+{
+	static Person[] parr;  //parr is static array of ref 'Person Class type'
+	static int cnt;        // cnt is static int var
+	static 					//static block
+	{
+		parr=new Person[100]; //100 ref inside array ,ini array
+		parr[0]=new Person(12,"Sejal","4444"); //now array of object will store in-- 
+		parr[1]=new Person(13,"Ashu","5555");  //-- references of parr
 		parr[2]=new Person(14,"Deepa","2323");
-		parr[3]=new Person(15,"Sangeeta","5555");
+		parr[3]=new Person(15,"Sangeeta","5555"); 
 		cnt=4;
 	}
 	
@@ -17,7 +19,7 @@ public class PersonService {
 		System.out.println("enetr id");
 		int id=sc.nextInt();
 		
-		sc.nextLine();
+		sc.nextLine();         //*
 		System.out.println("enetr name");
 		String nm=sc.nextLine();
 		System.out.println("enetr mobile");
@@ -25,6 +27,8 @@ public class PersonService {
 		//validate the existence of id
 		parr[cnt]=new Person(id,nm,mob);
 		cnt++;
+		
+		sc.close();
 	}
 	
 	public static void displayAll() {
@@ -38,12 +42,17 @@ public class PersonService {
 				return parr[i];
 		}
 		return null;*/
-		for(Person p:parr) {
-			if(p!=null) {
-				if(p.getPid()==id) {
+		for(Person p:parr)
+		{
+			if(p!=null)
+			{
+				if(p.getPid()==id)
+				{
 					return p;
 				}
-			}else {
+			}
+			else 
+			{
 				return null;
 			}
 		}
@@ -51,7 +60,7 @@ public class PersonService {
 		
 	}
 	public static Person[] getByName(String nm) {
-		//assumption maximum 10 perople will be ther with same name, other wise create array of size 100
+		//assumption maximum 10 people will be then with same name, other wise create array of size 100
 		Person[] arr=new Person[10];
 		int count=0;
 		for(int i=0;i<cnt;i++) {

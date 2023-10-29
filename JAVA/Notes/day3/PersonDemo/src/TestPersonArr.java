@@ -52,6 +52,8 @@ public class TestPersonArr {
 		}
 		
 		}while(choice!=6);
+		
+		sc.close();
 	}
 
 }

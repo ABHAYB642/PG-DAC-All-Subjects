@@ -85,7 +85,6 @@ public class TestPersonArr {
 			    if (status)
 			    {
 			      System.out.println("Deleted Succesfully ");
-			      
 			    }
 			    else
 			    {

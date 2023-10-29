@@ -1,4 +1,4 @@
-
+//composition //nested class
 public class Book {
 	private int bkid;
 	private String bkname,author;

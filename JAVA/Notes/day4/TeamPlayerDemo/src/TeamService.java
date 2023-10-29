@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TeamService {
-	static Team[] tarr;
+	static Team[] tarr;  //tarr is static array of ref 'Team Class type'
 	static int cnt;
 	
 	static {
@@ -25,7 +25,7 @@ public class TeamService {
 		sc.nextLine();
 		System.out.println("enter team name");
 		String tname=sc.nextLine();
-		//accept captain details
+	//accept captain details
 		System.out.println("captain player number");
 		int pno=sc.nextInt();
 		sc.nextLine();
@@ -33,8 +33,8 @@ public class TeamService {
 		String pname=sc.nextLine();
 		System.out.println("enter skill");
 		String skill=sc.nextLine();
-		Player c=new Player(pno,pname,skill);
-		//accept other player details
+		Player c=new Player(pno,pname,skill);//Object C of Player class captain ref
+	//accept other player details
 		Player[] plist=new Player[3];
 		for(int i=0;i<plist.length;i++) {
 			System.out.println("player number");
@@ -45,9 +45,9 @@ public class TeamService {
 			
 			System.out.println("enter skill");
 			skill=sc.nextLine();
-			plist[i]=new Player(pno,pname,skill);
+			plist[i]=new Player(pno,pname,skill); //array Object plist of Player class plist ref
 		}
-		tarr[cnt]=new Team(tno,tname,c,plist);
+		tarr[cnt]=new Team(tno,tname,c,plist);   //team class object inside it player class obj
 		cnt++;
 		
 	}

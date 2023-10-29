@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Team {
   private int tno;
   private String tname;
-  private Player captain;
-  private Player[] plist; 
+  private Player captain;  //reference inside Team class // NP type ==> reference ==> null
+  private Player[] plist;  
 	public Team()
 	{
 		super();

@@ -1,43 +1,54 @@
 #include<iostream>
 using namespace std;
-class Shape
-{
-	virtual int area=0;//pure virtual fun
-	
+class shape{
+	public:
+	virtual int area(){
+		return 0;
+	}
+   virtual void display(){
+		cout<<"Area ofshape : "<<endl;
+	}
 };
-class Square:public Shape
-{
+class square:public shape{
 	int side;
 	public:
-		Square(){
-			cout<<"In default of Square"<<endl;
-		}
-		Square(int s){
+		square(int s){
 			side=s;
 		}
-		int area()
-		{
-			area=side*side;
-			return area;
+		int area(){
+			return side*side;
 		}
+		void display(){
+			
+			cout<<"Side of square : "<<side<<endl;
+		}
+		
 };
-class Rectangle:public Shape
-{
-	int l,b;
+class rectangle:public shape{
+	int len,breadth;
 	public:
-		Rectangle(){
-			cout<<"In default of Rectangle"<<endl;
+		rectangle(int l,int b){
+			len=l;
+			breadth=b;
 		}
-		Rectangle(int l,int b){
-			this->l=l;
-			this->b=b;
+		int area(){
+			return len*breadth;
 		}
-		int area()
-		{
-			area=l*b;
-			return area;
+		void display(){
+			//square::display();
+			cout<<"Length is:"<<len<<"   Breath is : "<<breadth<<endl;
 		}
-	
-	
-	
 };
+int main(){
+	shape *sptr=new shape();
+	
+	sptr=new square(5);
+	//cout<<sptr->display()<<endl;
+	cout<<"\nArea of Square : "<<sptr->area()<<endl;
+	
+    sptr=new rectangle(5,10);
+    //cout<<sptr->display()<<endl;
+	cout<<"\nArea of Rectangle : "<<sptr->area()<<endl;
+	
+	
+}

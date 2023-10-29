@@ -76,7 +76,7 @@ public class PersonService {
 			System.out.println(P.getMob()+" to "+mob);
 			Scanner sc=new Scanner(System.in);
 			String ans=sc.next();
-			
+			 System.out.println("To Update Please Press 'Yes' ");
 			
 			sc.close();
 			if(ans.equals("yes"));
@@ -90,7 +90,7 @@ public class PersonService {
 		
 		return false;
 	}
-	public static boolean deletebyId(int id)
+	public static boolean deletebyId(int id)   //delete opn
 	{
 		int i=0;
 		boolean flag =false;
@@ -98,8 +98,8 @@ public class PersonService {
 		{
 			if(parr[i].getPid()==id)
 			{
-				flag=true;
-				break;
+				flag=true;              
+				break;                          //that person index will get i
 			}	
 		}
 //		for(Person P:parr)
@@ -115,15 +115,16 @@ public class PersonService {
 		{
 			System.out.println("Do you really want to Delete it");
 			System.out.println(parr[i]);
+			 System.out.println("To Delete Please Press 'Yes' ");
 			Scanner sc=new Scanner(System.in);
 			String ans=sc.next();
 			if(ans.equals("Yes"))
 			{
-				for(int j=i;j<cnt;j++)
+				for(int j=i;j<cnt;j++)   //j=i
 				{
 					parr[j]=parr[j+1];
 				}
-				cnt--;
+				cnt--; //*
 				return true;
 				
 			}
