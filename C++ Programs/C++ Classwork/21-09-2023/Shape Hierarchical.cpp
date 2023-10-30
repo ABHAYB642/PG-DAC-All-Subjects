@@ -22,6 +22,10 @@ class square:public shape{
 			
 			cout<<"Side of square : "<<side<<endl;
 		}
+		void a()
+		{
+			cout<<"inside sq";
+		}
 		
 };
 class rectangle:public shape{
