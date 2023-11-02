@@ -3,6 +3,7 @@
 2.deposite: takes amount generate error on either amount being -ve update balance
 3.withdraw:take amount generate error if balance goes lesser than 1000 else update.
 for option 2/3 one must provide account number,if found do needed tasks.*/
+
 #include<iostream>
 using namespace std;
 class Bank
