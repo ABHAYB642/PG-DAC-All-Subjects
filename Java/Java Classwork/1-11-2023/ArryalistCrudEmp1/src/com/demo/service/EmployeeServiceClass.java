@@ -72,8 +72,8 @@ public class EmployeeServiceClass implements EmployeeServiceIF {
 	}
 
 	@Override
-	public void deletebyID(int id) {
-		edao.deleteId(id);
+	public boolean deletebyID(int id) {
+		return edao.deleteId(id);
 		
 	}
 
@@ -82,6 +82,38 @@ public class EmployeeServiceClass implements EmployeeServiceIF {
 		// TODO Auto-generated method stub
 		return edao.getbyID(id);
 	}
+
+	@Override
+	public boolean modifySalById(int id, double sal) {
+		// TODO Auto-generated method stub
+		return edao.updatesalbyID(id,sal);
+	}
+
+	@Override
+	public List<Employee> sortbyname() {
+		// TODO Auto-generated method stub
+		return edao.sortbyName();
+	}
+
+	@Override
+	public List<Employee> sortbysal() {
+		
+		return edao.sortbySal();
+	}
+
+	@Override
+	public List<Employee> sortbydesg() {
+		// TODO Auto-generated method stub
+		return edao.sortbydesg();
+	}
+
+	@Override
+	public Employee[] getTopNEmployees(int n) {
+		// TODO Auto-generated method stub
+		return edao.findTopNEmployeesBySal(n);
+	}
+
+	
 
 	
 

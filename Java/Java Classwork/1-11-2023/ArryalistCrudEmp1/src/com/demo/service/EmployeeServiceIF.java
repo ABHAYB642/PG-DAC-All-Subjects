@@ -12,9 +12,21 @@ public interface EmployeeServiceIF {
 
 	List<Employee> displayAll();
 
-	void deletebyID(int id);
+	boolean deletebyID(int id);
 
 	Employee displaybyID(int id);
+
+	boolean modifySalById(int id, double sal);
+
+	List<Employee> sortbyname();
+
+	List<Employee> sortbysal();
+
+	List<Employee> sortbydesg();
+
+	Employee[] getTopNEmployees(int n);
+
+	
 
 
 

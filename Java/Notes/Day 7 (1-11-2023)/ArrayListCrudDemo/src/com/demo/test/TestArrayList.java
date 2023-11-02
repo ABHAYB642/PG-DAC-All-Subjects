@@ -34,7 +34,7 @@ public class TestArrayList {
 			}
 			break;
 		case 3:
-			System.out.println("enetr id for delete");
+			System.out.println("enetr id for modify");
 			id=sc.nextInt();
 			System.out.println("enter salary");
 			double sal=sc.nextDouble();

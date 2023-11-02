@@ -10,9 +10,21 @@ public interface EmployeeDaoIF {
 
 	List<Employee> findAll();
 
-	void deleteId(int id);
+	boolean deleteId(int id);
 
 	Employee getbyID(int id);
+
+	
+
+	boolean updatesalbyID(int id, double sal);
+
+	List<Employee> sortbyName();
+
+	List<Employee> sortbySal();
+
+	List<Employee> sortbydesg();
+
+	Employee[] findTopNEmployeesBySal(int n);
 
 
 

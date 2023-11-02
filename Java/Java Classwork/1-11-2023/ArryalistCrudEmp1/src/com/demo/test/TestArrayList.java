@@ -2,6 +2,8 @@ package com.demo.test;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
+
 import com.demo.service.EmployeeServiceIF;
 import com.demo.beans.Employee;
 import com.demo.service.EmployeeServiceClass;
@@ -26,9 +28,28 @@ public class TestArrayList {
 			case 2:
 				System.out.println("Enter id to delete");
 				int id = sc.nextInt();
-				esob.deletebyID(id);
+				boolean status=esob.deletebyID(id);
+				if(status) {
+					System.out.println("deleted successfully");
+				}
+				else {
+					System.out.println("not found");
+				}
 				break;
+				
 			case 3:
+				System.out.println("Enter id to modify salary");
+			    id = sc.nextInt();
+			    System.out.println("enter salary");
+				double sal=sc.nextDouble();
+				status=esob.modifySalById(id,sal);
+			    if(status) {
+					System.out.println("salry modified successfully");
+				}
+				else {
+					System.out.println("not found");
+				}
+				
 				break;
 			case 4:
 				List<Employee> elist=esob.displayAll();
@@ -48,20 +69,36 @@ public class TestArrayList {
 				{
 					System.out.println("not found");
 				}
-					
-				
 				break;
 			case 6:
+				List<Employee> elst=esob.sortbysal();
+				elst.stream().forEach(System.out::println);
 				
 				break;
 			case 7:
+				elst=esob.sortbyname();
+				elst.stream().forEach(System.out::println);
 				break;
 			case 8:
+				elst=esob.sortbydesg();
+				elst.stream().forEach(System.out::println);
 				break;
+			case 9:
+				System.out.println("How many topmost employees based on salary you want?");
+				int n=sc.nextInt();
+				Employee[] earr=esob.getTopNEmployees(n);
+				Stream.of(earr).forEach(System.out::println);
+				break;
+            case 10:
+            	sc.close();
+				System.out.println("Thanks,Visit again....");
+				break;
+            default:
+    			System.out.println("wrong choice");
 			}
 			
 			
-		}while(choice!=8);
+		}while(choice!=10);
 	}
 
 }
