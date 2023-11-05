@@ -18,11 +18,9 @@ public class TestLogin {
 				String uname=sc.next();
 				System.out.println("enetr password");
 				String pass=sc.next();
-				boolean status=UserService.validateUser(uname,pass);
+				boolean status=UserService.validateUser(uname,pass);//
 				if(status) {
-					System.out.println("success");
-					
-					
+					System.out.println("success");	
 				}
 				break;
 				
