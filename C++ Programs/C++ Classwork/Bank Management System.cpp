@@ -56,7 +56,7 @@ main()
 	Bank obj[10];
 	do
 	{
-		cout<<"\n1.Open account\n2.Deposite\n3.Withdraw\n4.List All\n0.Exit\n";
+		cout<<"\n1.Open account\n2.Deposit\n3.Withdraw\n4.List All\n0.Exit\n";
 		cout<<"\nEnter your choice:";
 		cin>>ch;
 		switch(ch)

@@ -20,9 +20,7 @@ public static void addEmp() {
 	// TODO Auto-generated method stub
 	Scanner sc=new Scanner(System.in);
 	int ch;
-	do
-	{
-		System.out.println("enetr id");
+    System.out.println("enetr id");
 	int pid=sc.nextInt();
 	System.out.println("enetr name");
 	String nm=sc.next();
@@ -65,13 +63,9 @@ public static void addEmp() {
 		emparr[cnt]=new Vendor(pid, nm, mob, em, dept, desg, ldt,no,amt);
 		cnt++;
 		break;
-	case 4:
-		System.out.println("Thankyou for Visiting");
-	break;
 	default:
 		System.out.println("Enter Valid Choice");
 	}
-	}while(ch!=4);
 	}
 
 
