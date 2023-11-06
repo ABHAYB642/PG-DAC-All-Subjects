@@ -36,7 +36,7 @@ public class EmployeeDaoImpl implements EmployeeDao{
 	}
 	@Override
 	public boolean removeById(int id) {
-		return elist.remove(new SalariedEmp(id));
+		return elist.remove(new SalariedEmp(id));   //equals method used for indexof and remove
 	}
 	@Override
 	public boolean updateSalById(int id, double sal) {

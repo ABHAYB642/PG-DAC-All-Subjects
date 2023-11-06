@@ -13,9 +13,9 @@ public class Person implements Comparable<Person>{
 		this.pid=id;
 		
 	}
-	public boolean equals(Object ob) {
-		return this.pid==((Person)ob).pid;
-	}
+//	public boolean equals(Object ob) {
+//		return this.pid==((Person)ob).pid;
+//	}
 	public Person(int pid, String pname, String mobile, String email) {
 		//System.out.println("in person paremterised  constructor");
 		this.pid = pid;
