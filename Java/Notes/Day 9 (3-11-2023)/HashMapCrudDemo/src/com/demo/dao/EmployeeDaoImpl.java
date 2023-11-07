@@ -17,11 +17,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
     static Map<Integer,Employee> hm;
     static {
     	hm=new HashMap<>();
-    	hm.put(12,new SalariedEmp(12,"Rajat","4444","a@gmail.com","hr","associate",LocalDate.of(2002, 12,30),4556,345));
- 		hm.put(13,new SalariedEmp(13,"Ajit","555","a22@gmail.com","admin","associate",LocalDate.of(2002, 10,30),4577,377));
- 		hm.put(14,new ContractEmployee(14,"Rajas","666","r345@gmail.com","admin","manager",LocalDate.of(2002, 12,30),30,4000));
+    	hm.put(14,new SalariedEmp(14,"Rajat","4444","a@gmail.com","hr","associate",LocalDate.of(2002, 12,30),4556,345));
+ 		hm.put(12,new SalariedEmp(12,"Ajit","555","a22@gmail.com","admin","associate",LocalDate.of(2002, 10,30),4577,377));
+ 		hm.put(16,new ContractEmployee(16,"Rajas","666","r345@gmail.com","admin","manager",LocalDate.of(2002, 12,30),30,4000));
  		hm.put(15,new ContractEmployee(15,"Ashwini","777","ashu@gmail.com","hr","associate",LocalDate.of(2000, 12,30),40,5000));
- 		hm.put(16,new ContractEmployee(16,"Ashwini","777","ashu@gmail.com","hr","associate",LocalDate.of(2000, 12,30),40,5000));
+ 		hm.put(13,new ContractEmployee(13,"Ashwini","777","ashu@gmail.com","hr","associate",LocalDate.of(2000, 12,30),40,5000));
     }
 	@Override
 	public void save(Employee e) {
@@ -33,7 +33,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> getAll() {
-		return (List<Employee>)hm.values();
+		List<Employee>elsit=new ArrayList<>();
+		for(Employee e:hm.values()) {
+			elsit.add(e);
+		}
+		return elsit;
+		//return (List<Employee>)hm.values();
 	}
 
 	@Override
@@ -85,11 +90,18 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			}else {
 				//vendor
 			}
-			return (int)(sal1-sal2);
+			//return (int)(sal1-sal2); asc
+			return (int)(sal2-sal1); //desc
 		};
-		List<Employee> elst=(List<Employee>) hm.values();
-		elst.sort(c);
-		return elst;
+		List<Employee>sorlit=new ArrayList<>();
+		for(Employee e:hm.values()) {
+			sorlit.add(e);
+		}
+		sorlit.sort(c);
+		return sorlit;
+//		List<Employee> elst=(List<Employee>) hm.values();
+//		elst.sort(c);
+//		return elst;
 	}
 
 	@Override
@@ -104,7 +116,13 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public List<Employee> findBySalary(double sal) {
-		List<Employee> elist=(List<Employee>)hm.values();
+		
+		List<Employee>elist=new ArrayList<>();
+		for(Employee e:hm.values()) {
+			elist.add(e);
+		}
+		
+//		List<Employee> elist=(List<Employee>)hm.values();
 		List<Employee> selected=new ArrayList<>();
 		for(Employee e:elist) {
 			if(e instanceof SalariedEmp) {
