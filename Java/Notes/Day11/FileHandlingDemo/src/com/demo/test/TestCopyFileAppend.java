@@ -8,8 +8,8 @@ import java.io.IOException;
 public class TestCopyFileAppend {
 
 	public static void main(String[] args) {
-		FileOutputStream fos=null;
-		File f=new File("testcopy.txt");
+		FileOutputStream fos=null;  //global bcz will used in two try block
+		File f=new File("testcopy.txt");//write to file which need to append
 		 try {
 			if(f.exists()) {
 				
@@ -25,10 +25,11 @@ public class TestCopyFileAppend {
 		
 		
 		try (FileInputStream fis=new FileInputStream("testfile.txt");
-			FileOutputStream fos1=fos;){
+			//FileOutputStream fos1=fos;
+				FileOutputStream fos1=new FileOutputStream("testcopy.txt");){
 			int x=fis.read();
 			while(x!=-1) {
-			    fos1.write(x);
+			    fos.write(x);
 			    x=fis.read();
 			}
 			

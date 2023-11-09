@@ -14,10 +14,11 @@ public class TestDataInputStream {
 			ArrayList<Employee> elist=new ArrayList<>();
 			String str=dis.readLine();
 			while(str!=null) {
-			   System.out.println(str);
+			   //System.out.println(str);
 			    String[] strarr=str.split(",");
-			    Stream.of(strarr).forEach(System.out::println);
+			    //Stream.of(strarr).forEach(System.out::println);
 			    elist.add(new Employee(Integer.parseInt(strarr[0]),strarr[1],strarr[2]));
+			    //public Employee(int eid, String ename, String mobile)
 			    str=dis.readLine();
 			}
 			System.out.println(elist);

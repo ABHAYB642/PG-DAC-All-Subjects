@@ -7,15 +7,16 @@ import java.io.IOException;
 public class TestCopyFile {
 
 	public static void main(String[] args) {
-		FileInputStream fis=null;
+		FileInputStream fis=null; //to declare globally bcz to access in finally block
 		FileOutputStream fos=null;
 		
 		try {
-			fis=new FileInputStream("testfile.txt");
-			fos=new FileOutputStream("testcopy.txt");
-			int x=fis.read();
+			fis=new FileInputStream("testfile.txt"); //reading from
+			fos=new FileOutputStream("testcopy.txt");//writing to
+			//read byte of data from the inputstream
+			int x=fis.read(); 
 			while(x!=-1) {
-			    fos.write(x);
+			    fos.write(x);  //write
 			    x=fis.read();
 			}
 			
@@ -25,7 +26,7 @@ public class TestCopyFile {
 			System.out.println("i/o error");
 		}finally {
 			try {
-				fis.close();
+				fis.close(); 
 				fos.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

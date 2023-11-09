@@ -11,7 +11,7 @@ public class TestEmpCrudDemo {
 
 	public static void main(String[] args) {
 		EmployeeService eservice=new EmployeeServiceImpl();
-		eservice.ReadFromFile();
+		eservice.ReadFromFile();//*******************************read
 		Scanner sc=new Scanner(System.in);
 		int choice=0;
 		do{
@@ -36,7 +36,7 @@ public class TestEmpCrudDemo {
 			elst.stream().forEach(System.out::println);
 			break;
 		case 4:
-			eservice.writToFile();
+			eservice.writToFile(); //*******************************write
 			sc.close();
 			System.out.println("thank you for visiting....");
 			break;

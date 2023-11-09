@@ -16,17 +16,17 @@ public class TestBufferedInputStream {
 			try {
 				if(f.exists()) {
 						//open the file in append mode
-							bos=new BufferedOutputStream(new FileOutputStream(f,true));
+							bos=new BufferedOutputStream(new FileOutputStream(fname,true));
 				}else{
 					//open the file in write mode
-					bos=new BufferedOutputStream(new FileOutputStream(f));
+					bos=new BufferedOutputStream(new FileOutputStream(fname));
 				}
 		    }catch(IOException e) {
 				System.out.println(e.getMessage());
 			}
 			
 
-        try(BufferedInputStream bis=new BufferedInputStream(new FileInputStream(f));
+        try(BufferedInputStream bis=new BufferedInputStream(new FileInputStream("testfile.txt"));
         		BufferedOutputStream bos1=bos;){
         	int x=bis.read();
         	while(x!=-1) {

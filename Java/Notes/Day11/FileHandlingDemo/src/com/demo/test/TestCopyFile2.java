@@ -8,7 +8,7 @@ public class TestCopyFile2 {
 
 	public static void main(String[] args) {
 		
-		
+		//autoclosable //try with resource
 		try(FileInputStream  fis=new FileInputStream("testfile.txt");
 			FileOutputStream fos=new FileOutputStream("testcopy.txt");) {
 			
