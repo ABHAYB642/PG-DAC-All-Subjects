@@ -8,4 +8,10 @@ public interface StudentService {
 
 	void addNewStudent();
 
+	Student searchbyid(int id);
+
+	Student[] searchbyname(String nm);
+
+	float calculategpa(int id);
+
 }

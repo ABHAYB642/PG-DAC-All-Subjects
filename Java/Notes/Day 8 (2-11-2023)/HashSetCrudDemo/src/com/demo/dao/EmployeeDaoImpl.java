@@ -44,11 +44,14 @@ public class EmployeeDaoImpl implements EmployeeDao{
 		return null;
 	}
 
+	
 	@Override
 	public boolean removeById(int id) {
 		return hs.remove(new SalariedEmp(id) );
 	}
 
+	
+	
 	@Override
 	public boolean updateSalById(int id, double sal) {
 		Employee e=getById(id);

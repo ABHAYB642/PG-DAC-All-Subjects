@@ -49,6 +49,17 @@ public class Student {
 	public String toString() {
 		return "Student [sid=" + sid + ", sname=" + sname + ", gpa=" + gpa + ", marks=" + Arrays.toString(marks) + "]";
 	}
+//	public float calculategpa() {
+//		float gpa;
+//		
+//		gpa= gpa=(1/3)*m1+(1/2)*m2+(1/4)*m3;
+//
+//		return gpa;
+//	}
+	
+	
+		 
+		
 	
 	
 }

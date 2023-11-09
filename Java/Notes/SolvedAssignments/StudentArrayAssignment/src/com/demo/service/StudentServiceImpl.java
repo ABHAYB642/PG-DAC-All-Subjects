@@ -17,7 +17,6 @@ public class StudentServiceImpl implements StudentService {
 	@Override
 	public Student[] displayAll() {
 		return sdao.getAll();
-		
 	}
 
 	@Override
@@ -36,6 +35,22 @@ public class StudentServiceImpl implements StudentService {
 		}
 		Student s = new Student(id,nm,gpa,arr);
 		sdao.addNewstudent(s);
+	}
+
+	@Override
+	public Student searchbyid(int id) {
+		// TODO Auto-generated method stub
+		return sdao.searchbyid(id);
+	}
+
+	@Override
+	public Student[] searchbyname(String nm) {
+		return sdao.searchbyname(nm);
+	}
+
+	@Override
+	public float calculategpa(int id) {
+		return sdao.calculategpa(id);
 	}
 
 }

@@ -8,4 +8,10 @@ public interface StudentDao {
 
 	void addNewstudent(Student s);
 
+	Student searchbyid(int id);
+
+	Student[] searchbyname(String nm);
+
+	float calculategpa(int id);
+
 }

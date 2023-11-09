@@ -12,8 +12,8 @@ public class StringManipulation
 	public StringManipulation() 
 	{
 		id=1;
-		str="Prathamesh Nale";
-		str1="    Tejas Aher     ";
+		str="Sujit Pawar";
+		str1="    Abhay Biramane     ";
 	}
 	
 	
