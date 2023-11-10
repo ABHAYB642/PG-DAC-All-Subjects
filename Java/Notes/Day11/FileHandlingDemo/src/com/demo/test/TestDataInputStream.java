@@ -23,7 +23,7 @@ public class TestDataInputStream {
 			}
 			System.out.println(elist);
 		}catch(IOException e ) {
-			
+			e.printStackTrace();
 		}
 
 	}

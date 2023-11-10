@@ -35,8 +35,32 @@ public class TestFriend {
 				}
 				break;
 			case 3:
+				System.out.println("Enter Name");
+				String nm=sc.next();
+				List<Friend>Samenm=new ArrayList<>();
+				Samenm=f.searchbynm(nm);
+				if(Samenm!=null)
+				{
+					for(Friend F:Samenm)
+					System.out.println(F);
+				}
+				else {
+					System.out.println("Not found");
+				}
 				break;
 			case 4:
+				System.out.println("Enter Hobby");
+				String hob=sc.next();
+				List<Friend>Samehob=new ArrayList<>();
+				Samehob=f.searchbyhobby(hob);
+				if(Samehob!=null)
+				{
+					for(Friend F:Samehob)
+					System.out.println(F);
+				}
+				else {
+					System.out.println("Not found");
+				}
 				break;
 			case 5:
 				f.addnewFriend();

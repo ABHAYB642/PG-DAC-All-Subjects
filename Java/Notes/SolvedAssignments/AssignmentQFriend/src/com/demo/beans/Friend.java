@@ -20,7 +20,6 @@ public class Friend {
 
 	public Friend(int id, String name, String lastname, Set<String> hobbies, String mob, String email, Date bdate,
 			String address) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.lastname = lastname;
@@ -32,7 +31,7 @@ public class Friend {
 	}
 
 	public Friend(int id) {
-		// TODO Auto-generated constructor stub
+		this.id=id;
 	}
 
 	public int getId() {

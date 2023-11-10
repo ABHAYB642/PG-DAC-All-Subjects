@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -75,6 +76,15 @@ public class FriendServiceclass implements FriendServiceIF{
 	public Friend searchbyid(int id) {
 		// TODO Auto-generated method stub
 		return fdao.searchbyid(id);
+	}
+	@Override
+	public List<Friend> searchbyhobby(String hob) {
+		return fdao.searchbyhobby(hob);
+	}
+	@Override
+	public List<Friend> searchbynm(String nm) {
+		
+		return fdao.searchbyname(nm);
 	}
 
 }
