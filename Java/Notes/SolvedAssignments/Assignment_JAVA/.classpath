@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="commandline_1/src"/>
-	<classpathentry kind="src" path="StudentInfo_2/src"/>
-	<classpathentry kind="src" path="StudentMenu_3/src"/>
-	<classpathentry kind="output" path="FriendsDemoM_Q2/bin"/>
-</classpath>
