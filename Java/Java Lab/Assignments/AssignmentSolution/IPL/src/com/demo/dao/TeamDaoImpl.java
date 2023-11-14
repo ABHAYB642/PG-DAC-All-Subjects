@@ -10,7 +10,6 @@ import com.demo.service.TeamServiceImpl;
 public class TeamDaoImpl implements TeamDao {
 
 	static List<Team> tlist;
-//	int cnt=3;
 	static {
 		List<Player>plist=new ArrayList<>();
 		
@@ -98,6 +97,28 @@ public class TeamDaoImpl implements TeamDao {
 	@Override
 	public List<Team> getall() {
 		return tlist;
+	}
+	@Override
+	public boolean addPlayer(int tid, int id, String name) {
+		List<Player> plist2=new ArrayList<>();
+		for(Team t:tlist) {
+			if(t.getTid()==tid) {
+			   plist2=t.getPlist();//Reference to actual list.So any Modifications in plist2 will modify List in Original Team
+			   plist2.add(new Player(id,name));
+			   return true;
+			}
+		}
+		return false;
+	}
+	@Override
+	public boolean modifycoach(int tid, String name) {
+		for(Team t:tlist) {
+			if(t.getTid()==tid) {
+				t.setCoachname(name);
+				return true;
+			}	
+			}
+		return false;
 	}
 
 	

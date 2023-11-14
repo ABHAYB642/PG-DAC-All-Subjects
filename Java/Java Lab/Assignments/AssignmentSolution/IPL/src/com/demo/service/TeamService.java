@@ -14,4 +14,8 @@ public interface TeamService {
 
 	List<Team> displayAll();
 
+	boolean addPlayer(int tid, int id, String name);
+
+	boolean modifycoach(int tid, String name);
+
 }

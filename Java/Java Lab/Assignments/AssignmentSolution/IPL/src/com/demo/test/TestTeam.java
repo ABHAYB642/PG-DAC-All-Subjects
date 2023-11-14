@@ -13,7 +13,7 @@ public class TestTeam {
 		Scanner sc=new Scanner(System.in);
 	
 		do {
-			System.out.println("1. add new Team\n2. delete a team\n3. delete a player from team\n4. display all\n5.display all player with a speciality(accept speciality from user");
+			System.out.println("1. add new Team\n2. delete a team\n3. delete a player from team\n4. display all\n5. display all player with a speciality(accept speciality from user");
 			System.out.println("6. add a new player in a team\n7. modify coach of a team\n8. exit");	
 			System.out.println("Enter Your Choice:");
 			choice=sc.nextInt();
@@ -56,10 +56,37 @@ public class TestTeam {
 				}
 				break;
 			case 5:
+				System.out.println("Not Applicable.No Skills Assigned to Anyone");
 				break;
 			case 6:
+				System.out.println("Enter Team ID to add Player");
+				int tid=sc.nextInt();
+				System.out.println("Enter Player Name");
+				String name=sc.next();
+				System.out.println("Enter Player ID");
+				id=sc.nextInt();
+				status=ts.addPlayer(tid,id,name);
+				if(status)
+				{
+					System.out.println("Player Added");
+				}
+				else {
+					System.out.println("Player not Added");
+				}
 				break;
 			case 7:
+				System.out.println("Enter Team ID");
+				tid=sc.nextInt();
+				System.out.println("Enter New Coachname");
+				name=sc.next();
+				status=ts.modifycoach(tid,name);
+				if(status)
+				{
+					System.out.println("Coach Modified");
+				}
+				else {
+					System.out.println("Coach Not Modified");
+				}
 				break;
 			case 8:
 				sc.close();
