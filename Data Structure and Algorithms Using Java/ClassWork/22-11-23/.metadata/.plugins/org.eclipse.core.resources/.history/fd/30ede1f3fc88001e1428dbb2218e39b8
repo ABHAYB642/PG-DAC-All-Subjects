@@ -1,0 +1,90 @@
+package com.demo.service;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SortClass {
+
+	public static void Sort(int[] arr) {
+		int ch;
+		do {
+			System.out.println("1.Bubble Sort Ascending \n2.Bubble Sort Descending \n3.Slection Sort ascending\n4.Selection sort descending\n5.Insertion Sort ascending \6.Insertion Sort descending\n7.Exit ");
+			System.out.println("Enter choice");
+			int n = arr.length;
+			Scanner sc = new Scanner(System.in);
+			ch = sc.next();
+
+			switch (ch) {
+			case 1:
+				// i for iterate
+				for (int i = 0; i < n; i++) {
+					// j for swap
+					boolean flag=false;
+					//System.out.println("!!!!!");
+					for (int j = 0; j < n - i - 1; j++) {
+						if (arr[j] > arr[j + 1]) {
+							//System.out.println("@@@@");
+							int temp = arr[j];
+							arr[j] = arr[j + 1];
+							arr[j + 1] = temp;
+							flag=true;
+						}
+						
+					}
+					if(!flag) {
+						
+						break;
+					}
+					System.out.println(Arrays.toString(arr));
+				}
+				break;
+			case 2:
+
+				// i for iterate
+				for (int i = 0; i < n; i++) {
+					// j for swap
+					for (int j = 0; j < n - i - 1; j++) {
+						if (arr[j] < arr[j + 1]) {
+							int temp = arr[j];
+							arr[j] = arr[j + 1];
+							arr[j + 1] = temp;
+						}
+					}
+				}
+				System.out.println(Arrays.toString(arr));
+				break;
+				
+				
+			case 3:
+				for(int i=0;i<n-1;i++) {
+					int min_idx=i;
+					for(int j=i+1;j<n;j++) {
+						if(arr[j]<arr[min_idx]) {
+							min_idx=j;
+						}
+					}
+					int temp=arr[i];
+					arr[i]=arr[min_idx];
+					arr[min_idx]=temp;
+				}
+				
+				System.out.println(Arrays.toString(arr));
+				break;
+			case 7:
+				System.out.println("Exited");
+				sc.close();
+				//System.out.println(Arrays.toString(arr));
+				break;
+			default:
+				System.out.println("Enter correct choice");
+			}
+		} while (ch != 7);
+
+	}
+
+	public static void selectionSort(int[] arr) {
+	   
+		
+	}
+
+}

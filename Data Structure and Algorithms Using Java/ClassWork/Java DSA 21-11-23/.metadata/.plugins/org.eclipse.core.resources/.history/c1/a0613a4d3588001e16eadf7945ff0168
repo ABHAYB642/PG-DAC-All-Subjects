@@ -1,0 +1,39 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+public class Addition {
+	
+//	
+//	private static int recursionaddition(int n) {
+//		if(n==1)
+//		{
+//			return 1;
+//		}
+//		return n+recursionaddition(n-1);
+//		
+//	}
+//
+//	
+	public static void main(String[] args) {
+//		System.out.println("Enter no of elements to add");
+//	    Scanner sc=new Scanner(System.in);
+//	    int n=sc.nextInt();
+//	    if(n<0) {
+//	    	System.out.println("Enter Positive no");
+//	    }
+//	    else {
+//	    	System.out.println("Sum = "+recursionaddition(n));
+//	    }
+//
+//		
+//
+//	}
+	while(true) {
+		System.out.println("Sujit Don");
+		break;
+	}
+
+	
+
+}}

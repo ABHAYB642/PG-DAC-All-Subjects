@@ -1,0 +1,12 @@
+package com.demo.service;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class TreeCityImpl implements TreeCity{
+	Set<String>hs=new HashSet<>();
+	HashMap<String, Set<String>> myMap = new HashMap<>();
+	
+
+}

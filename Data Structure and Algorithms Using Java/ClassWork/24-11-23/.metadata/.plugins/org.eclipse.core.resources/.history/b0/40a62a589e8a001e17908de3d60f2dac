@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.beans.MyStackString;
+
+public abstract class TestStringStack {
+
+	public static void main(String[] args) {
+		MyStackString s=new MyStackString(3);
+
+	}
+
+}

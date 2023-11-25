@@ -1,0 +1,10 @@
+package com.demo.test;
+
+public class Addition {
+
+	public static void main(String[] args) {
+		System.out.println("Enter no of elements to add");
+
+	}
+
+}

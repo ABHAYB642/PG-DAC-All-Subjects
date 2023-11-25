@@ -1,0 +1,39 @@
+package com.demo.service;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class TreeCityImp implements TreeCity{
+
+	static Set<String> hs=new HashSet<>();
+	static HashMap<String,Set<String>> hm = new HashMap<>();
+	static {
+		hs.add("Neem");
+		hs.add("Mango");
+		hs.add("Coconut");
+	}
+	public static boolean addTrees(String city) {
+		if(hm.containsKey(city)) {
+			hm.put(city, hs);
+			return true;
+		}
+		return false;
+	}
+	public static boolean deleteByCity(String city) {
+		if(hm.containsKey(city)) {
+			hm.put(city,null);
+			//hm.remove(city);
+			return true;
+		}
+		return false;
+	}
+	public static boolean AddTreeCity(String city) {
+		
+		if(!hm.containsKey(city)) {
+			System.out.println("Enter List of Trees");
+		}
+		return false;
+	}
+	
+}

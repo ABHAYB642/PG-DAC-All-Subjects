@@ -1,0 +1,21 @@
+package com.demo.service;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class TreeCityImp implements TreeCity{
+
+	static Set<String> hs=new HashSet<>();
+	static HashMap<String,Set<String>> hm = new HashMap<>();
+	static {
+		hs.add("Neem");
+		hs.add("Mango");
+		hs.add("Coconut");
+	}
+	public static void addTrees() {
+		if()
+		
+	}
+	
+}

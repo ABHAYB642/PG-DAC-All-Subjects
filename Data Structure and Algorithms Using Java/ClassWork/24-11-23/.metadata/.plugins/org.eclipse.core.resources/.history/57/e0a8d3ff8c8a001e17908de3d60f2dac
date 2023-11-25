@@ -1,0 +1,13 @@
+package com.demo.test;
+
+import com.demo.beans.MyStack;
+
+public class TestStackArray {
+
+	public static void main(String[] args) {
+		MyStack s=new MyStack(3);
+		s.pop();
+		s.push(10);
+	}
+
+}
