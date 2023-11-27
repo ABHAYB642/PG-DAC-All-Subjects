@@ -1,17 +1,18 @@
-package com.demo.test;
+	package com.demo.test;
 
 import java.util.Scanner;
 
 public class SearchData {
 	public static void  acceptData(int[] arr) {
 		Scanner sc=new Scanner(System.in);
-		for(int i=0;i<arr.length;i++) {
-			System.out.println("enetr number : "+(i+1));
+		for(int i=0;i<arr.length;i++) 
+            {
+			System.out.println("enter number : "+(i+1));
 			arr[i]=sc.nextInt();
 		}
 	}
 	public static int linearSearch(int[] arr,int search) {
-		for(int j=0;j<=arr.length-1;j++) {
+		for(int j=1;j<arr.length;j++) {
 			if(arr[j]==search)
 				return j;
 		}
@@ -49,12 +50,6 @@ public class SearchData {
 				System.out.println(first+","+last+","+mid+","+search);
 				return binarySearchRecurssive(mid+1,last,search,arr);
 			}
-			else {
-				System.out.println(first+","+last+","+mid+","+search);
-				return binarySearchRecurssive(first,mid-1,search,arr);
-				}
-				
-		}
 	}
 	public static void main(String[] args) {
 		int n=10;

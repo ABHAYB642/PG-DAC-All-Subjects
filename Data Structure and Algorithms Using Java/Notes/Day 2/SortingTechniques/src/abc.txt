@@ -1,0 +1,43 @@
+int count=0;
+ if(position==0)
+ {
+     llist=llist.next;
+     return llist;
+     
+ }
+ SinglyLinkedListNode temp=llist;
+ while(temp.next!=null)
+ {
+     if(count==position-1)
+     {
+         temp.next=temp.next.next;
+     }
+     ++count;
+     temp=temp.next;
+ }
+  return llist;
+    }
+	
+	
+	
+	
+	
+	
+	    SinglyLinkedListNode newnode=new SinglyLinkedListNode(data);
+    SinglyLinkedListNode temp=llist;
+    int count =0;
+    while(temp.next!=null)
+ {
+     if(count==position-1)
+     {
+         newnode.next=temp.next;
+         temp.next=newnode;
+     }
+     ++count;
+     temp=temp.next;
+ }   
+ return llist;
+    }
+	
+	
+	

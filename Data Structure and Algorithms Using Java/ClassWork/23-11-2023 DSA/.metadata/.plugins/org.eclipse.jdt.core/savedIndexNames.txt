@@ -1,7 +1,0 @@
-INDEX VERSION 1.134+C:\Users\IET\Desktop\Java DSA\23-11-2023 DSA\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-2651519606.index
-2449641239.index
-2613871300.index
-256736162.index
-2209910750.index
