@@ -1,0 +1,13 @@
+package circularQueueUsingLL;
+
+public class testQueue {
+	public static void main(String[] args) {
+		circularQueue cq=new circularQueue();
+		cq.addByPosition(1, 10);
+		cq.addByPosition(2, 20);
+		cq.addByPosition(3, 30);
+		cq.addByPosition(4, 40);
+		cq.display();
+		
+	}
+}

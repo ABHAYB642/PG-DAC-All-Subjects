@@ -1,0 +1,21 @@
+package com.demo.beans;
+
+public class SinglyCircular {
+	
+	Node head;
+	class Node{
+		Node next;
+		int data;
+		Node(){
+			next=null;
+		}
+		Node(int data){
+			this.data=data;
+			next=null;
+		}
+	}
+	public SinglyCircular() {
+		head=null;
+	}
+
+}

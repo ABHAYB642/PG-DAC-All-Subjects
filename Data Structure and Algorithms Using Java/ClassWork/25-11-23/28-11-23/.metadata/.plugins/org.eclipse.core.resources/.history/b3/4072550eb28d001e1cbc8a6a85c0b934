@@ -1,0 +1,28 @@
+package com.demo.beans;
+
+public class SinglyCircular {
+	
+	Node head;
+	class Node{
+		Node next;
+		int data;
+		Node(){
+			next=null;
+		}
+		Node(int data){
+			this.data=data;
+			next=null;
+		}
+	}
+	public SinglyCircular() {
+		head=null;
+	}
+	
+	public boolean addByPos(int value,int pos) {
+		Node newnode=new Node(value);
+		if(head==null) {
+			
+		}
+	}
+
+}

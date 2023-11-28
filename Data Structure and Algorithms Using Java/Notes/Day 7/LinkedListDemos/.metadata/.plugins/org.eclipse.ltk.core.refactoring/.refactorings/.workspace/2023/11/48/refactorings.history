@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;circurlarQueueUsingLL&apos; to &apos;circularQueueUsingLL&apos;&#x0D;&#x0A;- Original element: &apos;circurlarQueueUsingLL&apos;&#x0D;&#x0A;- Renamed element: &apos;circurlarQueueUsingLL&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;circurlarQueueUsingLL&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=circurlarQueueUsingLL" name="circularQueueUsingLL" references="true" stamp="1701144814996" version="1.0"/>
+</session>

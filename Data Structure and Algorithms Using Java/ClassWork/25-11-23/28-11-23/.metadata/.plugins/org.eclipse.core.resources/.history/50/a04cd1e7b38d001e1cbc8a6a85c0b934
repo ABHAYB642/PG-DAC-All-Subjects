@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.beans.SinglyCircular;
+
+public class TestSinglyCircular {
+
+	public static void main(String[] args) {
+		SinglyCircular ob=new SinglyCircular();
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.demo.test;
+
+public class TestSinglyCircular {
+
+	public static void main(String[] args) {
+		SinglyCircular ob=new SinglyCircular();
+
+	}
+
+}

@@ -1,0 +1,54 @@
+package circularQueueUsingLL;
+
+public class circularQueue {
+	Node head;
+	Node front;
+	Node rear;
+	class Node{
+		int data;
+		Node next;
+		
+		
+		Node(int val){
+			data=val;
+			next=null; 
+			front=null;
+			rear=null;
+		}
+	}
+	public boolean isEmpty(){
+		return front==null;
+	}
+	public void add(int data) {
+		Node newnode=new Node(data);
+		if(front==null) {
+			front=newnode;
+			rear=newnode;
+			System.out.println(front.data +" " + rear.data);
+			return;
+		}
+		rear.next=newnode;
+		rear=rear.next;
+	}
+	public void addByPosition(int val,int pos) {
+		Node newnode=new Node(val);
+		if(front==null) {
+			front=newnode;
+		}
+		Node temp=front;
+		int a=1;
+		while(a < pos-1) {
+			temp=temp.next;
+			a++;
+		}
+		newnode.next=temp.next;
+		temp.next=newnode;
+	}
+	public void display() {
+		Node temp=front;
+		while(temp!=null) {
+			System.out.println(temp.data);
+			temp=temp.next;
+		}
+	}
+}
