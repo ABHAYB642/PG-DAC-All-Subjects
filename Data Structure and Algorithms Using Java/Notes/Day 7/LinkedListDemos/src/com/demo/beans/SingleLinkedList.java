@@ -76,7 +76,7 @@ public class SingleLinkedList {
     			head=head.next;
     			//it will make the temp ready for garbage collection
     			temp.next=null;
-    			return true;0
+    			return true;
     		}else {
     			Node prev=head;
     			Node current=prev.next;
