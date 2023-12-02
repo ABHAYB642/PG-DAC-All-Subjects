@@ -1,0 +1,20 @@
+package com.demo.test;
+
+import com.demo.beans.DoublyCicularLinkedList;
+
+public class TestDoublyCircularLL {
+
+	public static void main(String[] args) {
+		DoublyCicularLinkedList ob = new DoublyCicularLinkedList();
+		ob.addAtStart(11);
+		ob.addAtStart(12);
+		ob.addAtStart(13);
+		ob.addAtend(23);
+		ob.addAtend(24);
+		//ob.addbypos(45, 5);
+		ob.display();
+		
+
+	}
+
+}

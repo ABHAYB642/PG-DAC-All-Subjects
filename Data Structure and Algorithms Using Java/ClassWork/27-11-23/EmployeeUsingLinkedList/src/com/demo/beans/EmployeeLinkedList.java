@@ -73,7 +73,7 @@ public class EmployeeLinkedList {
 			return false;
 		}
 	}
-	
+
 	public void displaydata() {
     	Node temp=head;
     	while(temp!=null) {

@@ -1,0 +1,20 @@
+package com.demo.beans;
+
+public class MyStack {
+	private int[] arr;
+	private int top;
+	private int size;
+	public MyStack() {
+		
+		arr=new int[10];
+		size=10;
+		top=-1;
+	}
+	public MyStack(int n) {
+		arr=new int[n];
+		
+		this.top =-1;
+		this.size = n;
+	}
+	
+}

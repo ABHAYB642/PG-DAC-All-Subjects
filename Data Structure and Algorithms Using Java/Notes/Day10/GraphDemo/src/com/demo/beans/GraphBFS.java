@@ -39,81 +39,6 @@ public class GraphBFS {
 		vqueue.add(start);
 		//till the queue is not empty, keep on adding non visited vertecises
 		//in the queue
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		while(vqueue.size()>0) {
 			int path=vqueue.poll();
 			System.out.print(path+",");
@@ -132,24 +57,6 @@ public class GraphBFS {
 		}
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	public String toString() {
 		StringBuilder sb=new StringBuilder();

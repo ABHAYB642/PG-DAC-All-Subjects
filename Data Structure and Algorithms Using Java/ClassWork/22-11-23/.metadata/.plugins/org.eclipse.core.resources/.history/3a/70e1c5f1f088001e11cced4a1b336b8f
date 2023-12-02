@@ -1,0 +1,18 @@
+package com.demo.test;
+
+import java.util.Arrays;
+
+import com.demo.service.SortClass;
+
+public class TestSort {
+
+	public static void main(String[] args) {
+		int []arr= {12,65,23,19,45,9,88};
+		
+		System.out.println(Arrays.toString(arr));
+		SortClass.bubbleSort(arr);
+		//System.out.println(Arrays.toString(arr));
+
+	}
+
+}

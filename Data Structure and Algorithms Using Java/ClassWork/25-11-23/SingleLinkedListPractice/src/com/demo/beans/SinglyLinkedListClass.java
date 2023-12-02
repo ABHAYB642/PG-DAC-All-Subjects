@@ -7,7 +7,6 @@ private Node head;
 			Node next;
 			Node(){
 				next=null;
-				
 			}
 			Node(int n){
 				this.data=n;
@@ -51,7 +50,37 @@ public boolean addElement(int n,int pos) {
 	}
 }
 
-
+public boolean deleteElement(int pos) {
+	if(head==null) {
+		System.out.println("List is empty");
+		return false;
+	}
+	else if(pos==1) {
+			Node temp;
+			temp=head;
+			head=head.next;
+			temp.next=null;
+			return true;
+		}
+	else {
+		Node prev=head;
+		Node current=head.next;
+		for(int i=1;current!=null && i<=pos-2;i++) {
+			prev=prev.next;
+			current=current.next;
+		}
+		if(current!=null) {
+			prev.next=current.next;
+		    current.next=null;
+		    current=null;
+		    return true;
+	}
+		else {
+		    System.out.println("Position is Wrong");
+		    return false;
+		}
+}
+}
 
 
 public void display() {

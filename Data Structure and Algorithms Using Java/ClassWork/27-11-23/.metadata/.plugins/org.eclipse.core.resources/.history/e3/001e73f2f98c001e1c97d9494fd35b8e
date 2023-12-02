@@ -1,0 +1,17 @@
+package com.demo.test;
+
+import com.demo.beans.MyDoublyLinkedList;
+
+public class TestDoublyLinkedList {
+
+	public static void main(String[] args) {
+		MyDoublyLinkedList ob=new MyDoublyLinkedList();
+		//ob.addFirst(50);
+		ob.addByPosition(30, 1);
+		ob.addByPosition(21, 2);
+		//ob.addEnd(32);
+		ob.displaydata();
+
+	}
+
+}

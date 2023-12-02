@@ -1,0 +1,112 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class MergeFiles {
+
+//	public static void main(String[] args) {
+//		
+//	    BufferedOutputStream bos=null;
+//	    String fname="file3.txt";
+//		File f=new File(fname);
+//		try {
+//			if(f.exists()) {
+//					//open the file in append mode
+//						bos=new BufferedOutputStream(new FileOutputStream(fname,true));
+//			}else{
+//				//open the file in write mode
+//				bos=new BufferedOutputStream(new FileOutputStream(fname));
+//			}
+//	    }catch(IOException e) {
+//			System.out.println(e.getMessage());
+//		}
+//		
+//
+//    try(BufferedInputStream bis=new BufferedInputStream(new FileInputStream("file1.txt"));
+//    		BufferedInputStream bis1=new BufferedInputStream(new FileInputStream("file2.txt"));	
+//    		BufferedOutputStream bos1=bos;){
+//    	int x=0;
+//    	System.out.println(x);
+//    	x=bis.read();
+//    	System.out.println(x);
+//    	int y=bis1.read();
+//    	System.out.println(x);
+//    	while(x!=-1 && y!=-1)
+//		{
+//			if(x<y)
+//			{
+//				bos.write(x);
+//			}
+//			else {
+//				bos.write(y);
+//			}
+//		}
+//		while(x!=-1) {
+//			bos.write(x);
+//		}
+//		while(y!=-1)
+//		{
+//			bos.write(y);
+//		}
+//	}
+//    	
+//    catch (FileNotFoundException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	} catch (IOException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+//}
+//
+//
+//	}
+	
+	public static void main(String[] args) {
+		FileInputStream fis=null; //to declare globally bcz to access in finally block
+		FileOutputStream fos=null;
+		FileInputStream fis2=null;
+		
+		try {
+			fis=new FileInputStream("file1.txt");
+			fis2=new FileInputStream("file2.txt");//reading from
+			fos=new FileOutputStream("file3.txt");//writing to
+			//read byte of data from the inputstream
+			int x=fis.read(); 
+			int y=fis2.read();
+			while(x!=-1 && y!=-1)
+				if(x==-1 && y==-1) {
+					break;
+				}
+				else {
+			    fos.write(x); 
+			    fos.write(y);//write
+			    x=fis.read();
+			    y=fis2.read();
+			}
+			
+		} catch (FileNotFoundException e) {
+			System.out.println("error occured");
+		} catch (IOException e) {
+			System.out.println("i/o error");
+		}finally {
+			try {
+				fis.close(); 
+				fos.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	
+
+	}
+
+}
+
+

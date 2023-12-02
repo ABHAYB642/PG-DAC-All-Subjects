@@ -1,0 +1,9 @@
+package com.demo.beans;
+
+public class EmployeeLinkedList {
+	Node head;
+	class Node{
+		Employee e;
+	}
+
+}

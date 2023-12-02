@@ -1,0 +1,16 @@
+package com.demo.test;
+
+public class TestHeap {
+
+	public static void main(String[] args) {
+		int[] arr= {65,35,26,13,23,12,91};
+		
+		System.out.println("Given array :");
+		System.out.println(Arrays.toString(arr));
+		heapSort(arr);
+		System.out.println("sorted Array : ");
+		System.out.println(Arrays.toString(arr));
+
+	}
+
+}

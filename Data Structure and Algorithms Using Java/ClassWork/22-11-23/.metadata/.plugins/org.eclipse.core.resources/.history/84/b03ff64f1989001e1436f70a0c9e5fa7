@@ -1,0 +1,26 @@
+import java.util.Arrays;
+
+public class MergeClass {
+	
+	public static void merge(int[] a1, int[] a2, int[] a3) {
+		int i=0,j=0,k=0;
+		while(i<a1.length && j<a2.length)
+		{
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		int [] a1= {2,3,5,10,12,8,15};
+		int [] a2= {1,9,6,23,5,98};
+		int [] a3=new int[a1.length+a2.length];
+		merge(a1,a2,a3);
+		System.out.println("First Array is: "+Arrays.toString(a1));
+		System.out.println("Second Array is: "+Arrays.toString(a2));
+		System.out.println("Merged Array is: "+Arrays.toString(a3));
+
+	}
+
+	
+
+}

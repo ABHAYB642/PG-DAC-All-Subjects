@@ -10,6 +10,8 @@ public class TestSinglyLinkedList {
         ob.addElement(13,2);
         ob.addElement(14,1);
         ob.display();
+        ob.deleteElement(5000);
+        ob.display();
 	}
 
 }

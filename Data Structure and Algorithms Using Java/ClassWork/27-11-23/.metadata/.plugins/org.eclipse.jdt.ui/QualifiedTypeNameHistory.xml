@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.demo.beans.QueueLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.beans.MyDoublyLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.beans.MyCircularQueue"/>
+    <fullyQualifiedTypeName name="com.demo.beans.DoublyLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.beans.StackSingleList"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.beans.CircularqueueLL"/>
+    <fullyQualifiedTypeName name="com.demo.beans.EmployeeLinkedList"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Employee"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,17 @@
+package com.demo.test;
+
+import com.demo.beans.Employee;
+import com.demo.beans.EmployeeLinkedList;
+
+public class TestEmpLL {
+
+	public static void main(String[] args) {
+		EmployeeLinkedList ob=new EmployeeLinkedList();
+		
+		Employee e1 = new Employee(1,"ram",34455);
+		Employee e2 = new Employee(2,"raj",5679);
+		
+
+	}
+
+}

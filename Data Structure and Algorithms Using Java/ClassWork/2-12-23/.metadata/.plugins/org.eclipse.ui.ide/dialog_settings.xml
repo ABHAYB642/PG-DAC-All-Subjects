@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\IET\Desktop\Github\IET_Buddies\Data Structure and Algorithms Using Java\Notes\Day 8\BinarySearchTreeDemo"/>
+			<item value="C:\Users\IET\Desktop\Java DSA\1-12-2023\Algorithms"/>
+			<item value="C:\Users\IET\Desktop\Github\IET_Buddies\Data Structure and Algorithms Using Java\Notes\Day10"/>
+			<item value="C:\Users\IET\Desktop\Github\IET_Buddies\Data Structure and Algorithms Using Java\Notes\Day 9\GraphDemo"/>
+			<item value="C:\Users\IET\Desktop\Java DSA\28-11-23\DoublyCircularLinkedListPractice"/>
+		</list>
+	</section>
+</section>

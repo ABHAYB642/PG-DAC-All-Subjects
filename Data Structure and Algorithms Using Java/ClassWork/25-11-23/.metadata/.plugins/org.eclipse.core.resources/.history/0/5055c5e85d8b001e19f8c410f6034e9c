@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.beans.SinglyLinkedList;
+
+public class TestSinglyLinkedList {
+
+	public static void main(String[] args) {
+		SinglyLinkedList ob=new SinglyLinkedList();
+        ob.addElement(0, 0)
+	}
+
+}
