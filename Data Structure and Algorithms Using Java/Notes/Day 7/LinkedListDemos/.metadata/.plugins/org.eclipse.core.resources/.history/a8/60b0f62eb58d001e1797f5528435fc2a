@@ -1,8 +1,0 @@
-package Hashing;
-
-public class hashTable {
-	int[] hashTable;
-	
-	
-	
-}

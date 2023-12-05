@@ -1,3 +1,0 @@
-INDEX VERSION 1.132+\\pun-iet\Assignment Submission Sept 2023\data structure class notes\Day 7\LinkedListDemos\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3542533993.index
