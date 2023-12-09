@@ -4,30 +4,40 @@
     <title>Currency Converter</title>
     <script>
         function f1(){
-            let x=document.getElementById("id1")
-            let y
-            
-            
-
+            let x=document.getElementById("id2").value;
+            let amount=parseInt(document.getElementById("amt").value);
+            let conversion=0
+            if(x=="Pound"){
+                conversion= amount*100
+            }
+            if(x=="Euro"){
+                conversion=amount*120
+            }
+            if(x=="Dollar"){
+                conversion=amount*80
+            }
+            document.getElementById("i2").innerHTML=conversion
         }
     </script>
 </head>
 <body>
     <h1>Currency Converter</h1>
     <div>
-       
-       From: <select name="" id="id1" onchange="f1()">
+       Enter Amount:<input type="number" id="amt" value="Type Here" onblur="f1()"><br><br>
+       From: <select name="" id="id2" onchange="f1()">
             <option>Dollar</option>
-            <option>Rupees</option>
+            <!-- <option>Rupees</option> -->
             <option>Euro</option>
             <option>Pound</option>
         </select> &nbsp; &nbsp;
-        To: <select name="" id="id2">
+        To: <select name="">
             <option>Rupees</option>
-            <option>Dollar</option>
+            <!-- <option>Dollar</option>
             <option>Euro</option>
-            <option>Pound</option>
+            <option>Pound</option> -->
         </select>
+        <br><br>
+        <input type ="button" value="CONVERT" onclick="f1()">
     </div>
     <p id="i2"> </p>
 </body>

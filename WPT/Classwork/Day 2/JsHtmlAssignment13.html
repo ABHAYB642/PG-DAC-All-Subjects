@@ -1,0 +1,38 @@
+<!-- Write an html that asks the user to enter firstname and 
+    lastname in two textfields
+ radio button Male Female
+Depending on the selection 
+Print Mr lastname in title case firstname in titlecase
+Or
+Madam lastname in title case firstname in titlecase  -->
+
+<html>
+    <head>
+        <script>
+         function f1(){
+            let m = document.getElementById("m").checked
+            let f = document.getElementById("F").checked
+            
+            if(m){
+                    let lastname=document.getElementById("l").value
+                    let name=`Mr. ${lastname}`
+                    document.getElementById("sp1").innerHTML=name
+
+            }
+            if(f){
+                    let lastname=document.getElementById("l").value
+                    let name=`Ms. ${lastname}`
+                    document.getElementById("sp1").innerHTML=name
+            }
+         }
+        </script>
+    </head>
+    <body>
+        Enter firstname : <input type="text"><br> <br>
+        Enter lastname : <input type="text" id="l"><br><br>
+        Gender : <br>
+        Male : <input type="radio" id="m" name="g" onclick="f1()">
+        Female : <input type="radio" id="F" name="g" onclick="f1()">
+        <p>Hello <span id="sp1"></span></p>
+    </body>
+</html>
