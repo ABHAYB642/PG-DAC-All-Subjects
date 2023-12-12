@@ -17,7 +17,7 @@
      console.log(tc);
      let no = document.getElementById("no1").value;
      let exchange = {
-        "$":{
+        "$":{  
             "RS":83.42,
             "EURO":0.93,
             "POUND":0.80,
@@ -59,24 +59,52 @@
 
     </script>
 </head>
-<body>
-    
+<style>
+    #d2 {
+       color: azure;
+       background-color: brown;
+       border-style: double;
+       border-color: blueviolet;
+       border-width: 4px;
+    }
+    #bt1{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+    }
+    #head1{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        align-items: center;
+        padding-top: 110px;
+    }
+</style>
+<body id="head1">
+    <h3 >Currency Converter</h3>
     <div style="color: green;  
     font-size: 20px;  
     background-color:rgb(198, 224, 224);
     border-radius: 10%;
-  margin-top: 10%;
-    text-align: center;">
-    
+    border-color:darkslategray;
+    border-width: 10px;
+    text-align: center;
+    width: fit-content;
+    margin-left: 325px;
+    padding: 20px;
+    font-weight: bold;
+    border: 2px solid black;"
+    >
    <div>  Enter Amount <input type="number" placeholder="Enter Number" id="no1"> <br><br>
 
    </div>
    
     
    <div>
-    from  
+    From  
 
     <select  id="from">
+        <option>Select From</option>
         <option value="$"> $</option>
         <option value="RS"> RS</option>
         <option value="POUND">POUND</option>
@@ -89,8 +117,9 @@
 
 
    <div>
-    to
+    To
     <select  id="to">
+        <option>Select to</option>
         <option value="$"> $</option>
         <option value="RS"> RS</option>
         <option value="POUND">POUND</option>
@@ -103,13 +132,14 @@
    </div>
 
    <div>
-    <button onclick="calculate()">submit</button>
+    <button onclick="calculate()" id="bt1">Submit</button>
     <br>
    </div>
-   
-  <div>  <p >Total Amount = <span id ="result"></span></p></div>
-  
 </div>
+   <br>
+   <p id="d2" style="margin-left: 375px; width: 200px; padding:4px ;">Total Amount = <span id ="result"></span></p>
+  
+
 </body>
 </html> 
  
