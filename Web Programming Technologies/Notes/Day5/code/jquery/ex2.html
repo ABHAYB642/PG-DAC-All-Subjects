@@ -1,0 +1,24 @@
+<!--accept a name from user and show it in uppercase in the ptag-->
+
+<html>
+    <head>
+        <script src="./jquery-3.6.0.js"></script>
+        <script>
+            $().ready(()=>{
+
+                $("#tf1").change(()=>{
+                    let str = $("#tf1").val()
+                    let uc = str.toUpperCase()
+                    $("#ptag").html(`<b>${uc}</b>`)      
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="tf1" />
+            <p id="ptag"></p>
+            <p></p>
+        </div>
+    </body>
+</html>
