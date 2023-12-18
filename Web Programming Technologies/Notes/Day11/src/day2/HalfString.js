@@ -18,10 +18,10 @@ export default class HalfString extends React.Component
     }
 
 
-     // handler(event){
-    //    let s= event.target.value
-    //    let shalf=s.substring(0,s.length/2).toUpperCase()
-    //     this.setState({half:shalf})
+    // handler(event)
+    // {
+    //     console.log(event.target.value)
+    //     this.setState({half:event.target.value})
     // }
 
     render()
