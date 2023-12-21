@@ -1,7 +1,7 @@
 import {useRef,useState} from "react"
 export default function RefEx()
 {
-    let count =0
+   let count =0
     let cntref = useRef(0)
     let textref = useRef("This is the ref")
     let [c,setc] =useState(0)
