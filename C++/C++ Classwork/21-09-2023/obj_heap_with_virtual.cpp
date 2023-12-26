@@ -30,7 +30,8 @@ void Employee::display()
 }
 int Employee::findSalary()
 {
-	cout<<"employee - 10000"<<endl;
+	return 1;
+//	cout<<"employee - 10000"<<endl;
 }
 
 class wageEmployee : public Employee //derived
@@ -59,7 +60,7 @@ wageEmployee::wageEmployee(int id,int hrs,int rate):Employee(id)
 }
 int wageEmployee::findSalary()
 {
-	return hrs * rate;
+	return 2;
 }
 void wageEmployee::display() 
 {
@@ -115,7 +116,7 @@ int main()
 	ptr=new wageEmployee(100,1000,500);
 	cout<<"wageEmp salary \n"<<ptr->findSalary()<<endl;
 	
-	ptr=new salesManager(100,1000,500,2000,100);
+//	ptr=new salesManager(100,1000,500,2000,100);
 	
 	cout<<"salesmanager salary \n"<<ptr->findSalary();
 	
