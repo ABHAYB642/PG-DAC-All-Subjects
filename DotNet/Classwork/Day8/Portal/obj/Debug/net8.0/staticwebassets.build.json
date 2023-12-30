@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MtaYOGFKJ0tABVeAOe9pifwItYcUbdkj9YlwDWwMJpQ=",
+  "Hash": "81bvXHkuXuY4dgINfY3/UmBx5P2mjEU+mP0lZKK/lNs=",
   "Source": "Portal",
   "BasePath": "_content/Portal",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Portal.styles.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Portal.styles.css",
       "SourceId": "Portal",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Portal",
       "RelativePath": "Portal.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Portal.styles.css"
+      "OriginalItemSpec": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Portal.styles.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Portal.bundle.scp.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Portal.bundle.scp.css",
       "SourceId": "Portal",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Portal",
       "RelativePath": "Portal.bundle.scp.css",
       "AssetKind": "All",
@@ -52,10 +52,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Portal.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Portal.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\css\\site.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -74,7 +74,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\favicon.ico",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -93,7 +93,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\js\\site.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -112,7 +112,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -131,7 +131,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -150,7 +150,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -169,7 +169,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -188,7 +188,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -207,7 +207,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -226,7 +226,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -245,7 +245,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -264,7 +264,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -283,7 +283,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -302,7 +302,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -321,7 +321,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -359,7 +359,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -378,7 +378,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -397,7 +397,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -416,7 +416,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -435,7 +435,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -454,7 +454,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -473,7 +473,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -492,7 +492,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -511,7 +511,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -530,7 +530,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -549,7 +549,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -568,7 +568,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -587,7 +587,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -606,7 +606,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -625,7 +625,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -644,7 +644,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -663,7 +663,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -682,7 +682,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -701,7 +701,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -720,7 +720,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -739,7 +739,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -758,7 +758,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -777,7 +777,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -796,7 +796,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -815,7 +815,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -834,7 +834,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -853,7 +853,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -872,7 +872,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -891,7 +891,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -910,7 +910,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -929,7 +929,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -948,7 +948,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -967,7 +967,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -986,7 +986,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1005,7 +1005,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1024,7 +1024,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1043,7 +1043,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1062,7 +1062,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1081,7 +1081,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1100,7 +1100,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1119,7 +1119,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1138,7 +1138,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1157,7 +1157,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",
@@ -1176,7 +1176,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Portal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\wwwroot\\",

@@ -13,7 +13,7 @@ public static class Service
         return allProducts;
     }
 
-    public static bool ValidateUser(string username, string password)
+    public static User ValidateUser(string username, string password)
     {
         return DBManager.ValidateUser(username,password);
         

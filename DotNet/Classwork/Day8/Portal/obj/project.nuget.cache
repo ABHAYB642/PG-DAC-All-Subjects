@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ajq+yn9wm5qkY31IEjlbPDgFOOH7w8MAnAbVWbIavMlKghRZ4icP1+nbUQICVkrcRxpCCuhoIsdOs/NNdNAARw==",
+  "dgSpecHash": "KpNb3VcSQgi1FLQjEStVZ+6ih4Fw/hPOTj6bKmTO738Zx2AxJH2ghvk2UU2EL2tQISMrwnhL99t6Ka2h6nUmIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\Portal.csproj",
+  "projectFilePath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\Portal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IET\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\IET\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\Portal.csproj": {}
+    "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\Portal.csproj": {}
   },
   "projects": {
     "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\BLL\\BLL.csproj": {
@@ -180,14 +180,14 @@
         }
       }
     },
-    "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\Portal.csproj": {
+    "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\Portal.csproj",
+        "projectUniqueName": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\Portal.csproj",
         "projectName": "Portal",
-        "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\Portal.csproj",
+        "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\Portal.csproj",
         "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\portal\\obj\\",
+        "outputPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Day8\\Portal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"

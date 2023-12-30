@@ -15,12 +15,13 @@ public class ProductController : Controller
         _logger = logger;
     }
 
+    
+
     public IActionResult Index()
     {
         List<Product>allproduct=new List<Product>();
         allproduct=Service.GetAllProducts();
-        this.ViewData["AllProduct"]=allproduct;
-        // Console.WriteLine(allproduct);
+        ViewData["AllProduct"]=allproduct;
         foreach(Product p in allproduct){
             Console.WriteLine(p);
         }

@@ -1,6 +1,9 @@
 using BOL;
 using MySql.Data.MySqlClient;
 namespace Connected;
+using BOL;
+using Org.BouncyCastle.Asn1.Misc;
+using Org.BouncyCastle.Asn1.X509;
 
 public class DBManager{
 
@@ -42,7 +45,7 @@ public class DBManager{
 
             return getallproducts;
     }
-    public static bool ValidateUser(string username, string password)
+    public static User ValidateUser(string username, string password)
     {
         MySqlConnection conn=new MySqlConnection();
         conn.ConnectionString=conString;
@@ -53,14 +56,18 @@ public class DBManager{
         cmd.Parameters.AddWithValue("@password",password);
         MySqlDataReader reader=cmd.ExecuteReader();
         if(reader.Read()){
-            return true;
+               Console.WriteLine("ID: " + reader[0]);
+               Console.WriteLine("Name: " + reader[1]);
+               Console.WriteLine("Age: " + reader[2]);
+            User u=new User{Id=1,Name="abhay"};
+            return u;
         }}catch(Exception e){
             Console.WriteLine(e.Message);
         }
         finally{
             conn.Close();
         }
-    return false;
+    return null;
     }
 }
 
