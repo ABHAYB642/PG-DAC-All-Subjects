@@ -12,6 +12,8 @@ Console.WriteLine( "Current Balance="+ currentBalance);
 /*NotificationService.SendEmail("Raj","Your salary is deposited");
 TaxationService.PayIncomeTax(5000);
 */
+
+//Indirect Call (Asynchronous Call)
 //TaxOperation revadi=new TaxOperation(TaxationService.PayServiceTax);
 //revadi(6000);
 

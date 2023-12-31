@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Notes\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj": {
+    "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Notes\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Notes\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj",
         "projectName": "HRPortal",
-        "projectPath": "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj",
-        "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day9\\HRSolution\\HRPortal\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Notes\\Day9\\HRSolution\\HRPortal\\HRPortal.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Notes\\Day9\\HRSolution\\HRPortal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

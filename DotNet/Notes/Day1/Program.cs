@@ -44,4 +44,4 @@ string strPerson=prn.ToString();
 Console.WriteLine(strPerson);
 
 Color myColor=new Color(255,0,0);
-
+Console.WriteLine(myColor.red);

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\IET\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Demo1\\Demo1.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\Day 1\\Demo1\\Demo1.csproj",
       "projectName": "Demo1",
-      "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Demo1\\Demo1.csproj",
-      "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\Demo1\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\Day 1\\Demo1\\Demo1.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\Day 1\\Demo1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

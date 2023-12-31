@@ -1,6 +1,6 @@
 namespace Graphics;
 public struct Color{
-    public int red;
+    public int red{set;get;};
     public int green;
     public int blue;
     public Color(int r, int g , int b){
@@ -8,4 +8,5 @@ public struct Color{
         this.blue=b;
         this.green=g;
     }
+    
 }

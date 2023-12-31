@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LoginApp/1.0.0": {
+        "dependencies": {
+          "BOL": "1.0.0"
+        },
+        "runtime": {
+          "LoginApp.dll": {}
+        }
+      },
+      "BOL/1.0.0": {
+        "runtime": {
+          "BOL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LoginApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BOL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
