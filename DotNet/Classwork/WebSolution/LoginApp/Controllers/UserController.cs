@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LoginApp.Models;
 using BOL;
+using BLL;
 
 namespace LoginApp.Controllers;
 
@@ -16,6 +17,11 @@ public class UserController : Controller
 
     public IActionResult Login()
     {
+        if(TempData["updatesuccess"]!=null){
+            string s= TempData["updatesuccess"] as String;
+             ViewData["logindata"]=s;
+             return View();
+        }
         return View();
     }
 
@@ -23,20 +29,43 @@ public class UserController : Controller
     public IActionResult Login(String username,String password)
     {
         //Console.WriteLine(username);
-        User u1 = UserService.ValidateUser(username,password);
-        if(u1!=null){
-           ViewData["ValidUser"]=u1.ToString();
+        bool status = Userservice.ValidateUser(username,password);
+        if(status){
+        //    ViewData["ValidUser"]=u1.ToString();
             return RedirectToAction("Welcome");
         }
         else{
         return View();
         }  
-        // return View();
     }
     public IActionResult Welcome()
     {
         return View();
     }
+
+[HttpGet]
+    public IActionResult ForgetPassword()
+    {
+        return View();
+    }
+
+
+
+[HttpPost]
+    public IActionResult ForgetPassword(String usern,String pass)
+    { 
+        Console.WriteLine(usern);
+        Console.WriteLine(pass);
+        bool status=Userservice.updatepass(usern,pass);
+        if(status){
+            string s="Password updated succesfull";
+            TempData["updatesuccess"]=s;
+            return this.RedirectToAction("Login"); 
+        }
+        return View();
+    }
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

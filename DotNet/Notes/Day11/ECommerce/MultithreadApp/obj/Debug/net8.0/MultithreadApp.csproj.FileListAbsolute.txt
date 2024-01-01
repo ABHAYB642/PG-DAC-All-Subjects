@@ -1,0 +1,15 @@
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\bin\Debug\net8.0\MultithreadApp.exe
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\bin\Debug\net8.0\MultithreadApp.deps.json
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\bin\Debug\net8.0\MultithreadApp.runtimeconfig.json
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\bin\Debug\net8.0\MultithreadApp.dll
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\bin\Debug\net8.0\MultithreadApp.pdb
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.AssemblyInfoInputs.cache
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.AssemblyInfo.cs
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.csproj.CoreCompileInputs.cache
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.sourcelink.json
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.dll
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\refint\MultithreadApp.dll
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.pdb
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\MultithreadApp.genruntimeconfig.cache
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Notes\Day11\ECommerce\MultithreadApp\obj\Debug\net8.0\ref\MultithreadApp.dll

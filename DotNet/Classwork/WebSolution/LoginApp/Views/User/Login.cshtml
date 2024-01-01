@@ -1,21 +1,29 @@
 
-
+@{
+  @* if(ViewData["logindata"]!=null){ *@
+    string s=ViewData["logindata"] as String;
+    @* <p align="centre">@s</p> *@
+    <center>@s</center>
+  @* } *@
+}
 <div align="center" width="300" height="400">
 <h1> <b style="font-family: Times New Roman, Times, serif;">Login</b></h1>
 <form method="post">
   <div class="form-group col-md-6">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+    Email address: <input type="email" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted"></small>
   </div>
   <div class="form-group col-md-6">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+    <input type="text" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-group form-check col-md-6">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input"  id="exampleCheck1" required>
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
+  <br><br>
+  <a href="ForgetPassword">Forget Password</a>
 </form>
 </div>
