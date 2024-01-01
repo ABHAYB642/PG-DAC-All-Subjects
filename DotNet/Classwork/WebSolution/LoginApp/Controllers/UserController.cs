@@ -18,8 +18,9 @@ public class UserController : Controller
     public IActionResult Login()
     {
         if(TempData["updatesuccess"]!=null){
-            string s= TempData["updatesuccess"] as String;
-             ViewData["logindata"]=s;
+            // string s= TempData["updatesuccess"] as String;
+            //  ViewData["logindata"]=s;
+            ViewData["logindata"]=TempData["updatesuccess"] as String;
              return View();
         }
         return View();
@@ -48,10 +49,30 @@ public class UserController : Controller
     {
         return View();
     }
+    [HttpGet]
+    public IActionResult Register()
+    {
+        return View();
+    }
 
+    [HttpPost]
+    public IActionResult Register(String name,String email,String password)
+    {
+        // Console.WriteLine(status);
+        Console.WriteLine("status");
+        Console.WriteLine(name);
+        bool status=Userservice.RegisterUser(name,email,password);
+        
+        if(status){
+            return this.RedirectToAction("Login");
+        }
+        else{
+                return View();
+        }
+        
+    }
 
-
-[HttpPost]
+    [HttpPost]
     public IActionResult ForgetPassword(String usern,String pass)
     { 
         Console.WriteLine(usern);

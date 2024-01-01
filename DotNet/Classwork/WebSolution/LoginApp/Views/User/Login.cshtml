@@ -1,10 +1,10 @@
 
 @{
-  @* if(ViewData["logindata"]!=null){ *@
+  if(ViewData["logindata"]!=null){
     string s=ViewData["logindata"] as String;
     @* <p align="centre">@s</p> *@
     <center>@s</center>
-  @* } *@
+  }
 }
 <div align="center" width="300" height="400">
 <h1> <b style="font-family: Times New Roman, Times, serif;">Login</b></h1>
@@ -24,6 +24,6 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
   <br><br>
-  <a href="ForgetPassword">Forget Password</a>
+  <a href="ForgetPassword">Forget Password</a> &nbsp &nbsp <a  href="Hello">New User?</a>
 </form>
 </div>

@@ -1838,19 +1838,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IET\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\LoginApp\\LoginApp.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\LoginApp\\LoginApp.csproj",
       "projectName": "LoginApp",
-      "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\LoginApp\\LoginApp.csproj",
-      "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\LoginApp\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\LoginApp\\LoginApp.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\LoginApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1862,11 +1862,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BLL\\BLL.csproj"
+            "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BOL\\BOL.csproj": {
-              "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BOL\\BOL.csproj"
+            "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BOL\\BOL.csproj": {
+              "projectPath": "C:\\Users\\Dell\\Desktop\\Git_N\\IET_Buddies\\DotNet\\Classwork\\WebSolution\\BOL\\BOL.csproj"
             }
           }
         }
