@@ -312,6 +312,7 @@
       },
       "DAL/1.0.0": {
         "dependencies": {
+          "BOL": "1.0.0",
           "MySql.Data": "8.2.0"
         },
         "runtime": {

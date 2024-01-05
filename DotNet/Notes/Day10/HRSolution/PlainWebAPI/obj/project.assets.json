@@ -2239,11 +2239,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day10\\HRSolution\\PlainWebAPI\\PlainWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Notes\\Day10\\HRSolution\\PlainWebAPI\\PlainWebAPI.csproj",
       "projectName": "PlainWebAPI",
-      "projectPath": "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day10\\HRSolution\\PlainWebAPI\\PlainWebAPI.csproj",
+      "projectPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Notes\\Day10\\HRSolution\\PlainWebAPI\\PlainWebAPI.csproj",
       "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IET\\Desktop\\Ayush_Dotnet\\DOTNET\\Day10\\HRSolution\\PlainWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\IET\\Desktop\\Github\\IET_Buddies\\DotNet\\Notes\\Day10\\HRSolution\\PlainWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"

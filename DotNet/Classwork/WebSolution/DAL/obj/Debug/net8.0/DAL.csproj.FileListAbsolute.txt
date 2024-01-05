@@ -24,3 +24,6 @@ C:\Users\Dell\Desktop\Git_N\IET_Buddies\DotNet\Classwork\WebSolution\DAL\obj\Deb
 C:\Users\Dell\Desktop\Git_N\IET_Buddies\DotNet\Classwork\WebSolution\DAL\obj\Debug\net8.0\refint\DAL.dll
 C:\Users\Dell\Desktop\Git_N\IET_Buddies\DotNet\Classwork\WebSolution\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\Dell\Desktop\Git_N\IET_Buddies\DotNet\Classwork\WebSolution\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Classwork\WebSolution\DAL\bin\Debug\net8.0\BOL.dll
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Classwork\WebSolution\DAL\bin\Debug\net8.0\BOL.pdb
+C:\Users\IET\Desktop\Github\IET_Buddies\DotNet\Classwork\WebSolution\DAL\obj\Debug\net8.0\DAL.csproj.CopyComplete

@@ -1,0 +1,13 @@
+@using BOL;
+
+@{
+    Product p=ViewData["s"] as Product;
+}
+
+<form method="post">
+    Product Id : <input type="number" value=@p.ProductId name="productId">
+    Product Name : <input type="text" value=@p.ProductName name="productName">
+    Product Price : <input type="number" value=@p.Price name="price">
+    Product Qty : <input type="number" value=@p.Qty name="qty">
+    <button>Update</button>
+</form>

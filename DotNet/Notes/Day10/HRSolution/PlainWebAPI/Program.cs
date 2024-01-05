@@ -11,12 +11,12 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseHsts();
 }
-app.MapPost("/api/pmp/activities",   ( ) =>{
+app.MapGet("/api/pmp/activities",   ( ) =>{
     List<Product> items= DBManager.GetAllProducts();
     return items;
 });
 
-app.MapGet("/api/pmp/activities",   ( ) =>{
+app.MapPost("/api/pmp/activities",   ( ) =>{
     List<Product> items=DBManager.GetAllProducts();
     return items;
 });

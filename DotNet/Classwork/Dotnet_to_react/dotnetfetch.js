@@ -12,7 +12,8 @@ export default function Datafetch()
         let promise =axios.get("http://localhost:5114/api/pmp/activities")
         console.log(typeof(promise))
         promise.then((response)=>{
-               let arr=(response.data)
+            setarr(response.data);
+               let arr=(response.data);
                setarr(arr);
                console.log(arr);
 

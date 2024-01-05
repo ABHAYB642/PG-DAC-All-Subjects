@@ -8,6 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.2.0" />
+    <ProjectReference Include="..\BOL\BOL.csproj" />
   </ItemGroup>
-
 </Project>

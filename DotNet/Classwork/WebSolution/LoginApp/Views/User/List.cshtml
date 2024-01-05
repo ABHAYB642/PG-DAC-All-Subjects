@@ -1,0 +1,48 @@
+@using BOL;
+
+
+<h2 class="contain">Product List</h2>
+
+@{
+    List<Product> list = new List<Product>();
+        list= ViewData["productlist"] as  List<Product>;
+
+<a href="Insert" class="contain">Add new product</a>
+
+
+<div class="contain">
+<table border="1">
+    <thead align="center">
+       <tr>
+        <th>Product Id</th> 
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Edit</th>
+        <th>Delete </th>
+       </tr>
+    </thead>
+    <tbody align="center">
+        @foreach(Product p in list){
+         <tr>
+            <td>
+              @p.ProductId
+            </td>
+            <td>
+                @p.ProductName
+            </td>
+            <td>
+                @p.Qty
+            </td>
+            <td>
+                @p.Price
+            </td>
+            <td><a href="Edit/@p.ProductId">Edit</a></td>
+            <td> <a href="Delete/@p.ProductId">Delete</a</td>
+         </tr>
+    }   
+    </tbody>
+</table>
+</div>
+     
+}

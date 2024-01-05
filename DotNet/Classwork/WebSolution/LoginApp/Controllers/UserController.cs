@@ -33,18 +33,44 @@ public class UserController : Controller
         bool status = Userservice.ValidateUser(username,password);
         if(status){
         //    ViewData["ValidUser"]=u1.ToString();
-            return RedirectToAction("Welcome");
+            return RedirectToAction("List");
         }
         else{
         return View();
         }  
+
+    }
+
+     public IActionResult List()
+    {
+        List<Product> list = new List<Product>();
+        list=Userservice.getAllproducts();
+        ViewData["productlist"]=list;
+        return View();
     }
     public IActionResult Welcome()
     {
         return View();
     }
 
-[HttpGet]
+    public IActionResult Edit(int id)
+    {
+        List<Product> list = new List<Product>();
+        list=Userservice.getAllproducts();
+        Product p=list.Find((P)=>P.ProductId==id);
+        ViewData["s"] = p;
+
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Edit(int productId,String productName ,double price,double qty)
+    {
+       // Console.WriteLine(price+productId+productName+qty);
+        bool n =Userservice.UpdateProduct(productId,productName ,price,qty);
+        return RedirectToAction("List");
+    }
+
+    [HttpGet]
     public IActionResult ForgetPassword()
     {
         return View();
@@ -86,6 +112,24 @@ public class UserController : Controller
         return View();
     }
 
+    [HttpGet]
+    public IActionResult Delete(int id)
+    {
+        bool status=Userservice.DeleteById(id);
+       return RedirectToAction("List");
+    }
+
+    [HttpGet]
+    public IActionResult Insert()
+    {
+        return View();
+    }
+      [HttpPost]
+    public IActionResult Insert(int productId,String productName ,double price,double qty)
+    {
+        bool status=Userservice.insertProduct(productId,productName ,price,qty);
+        return RedirectToAction("List");
+    }
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
