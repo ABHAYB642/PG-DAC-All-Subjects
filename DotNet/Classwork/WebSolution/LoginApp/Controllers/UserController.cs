@@ -59,8 +59,8 @@ public class UserController : Controller
     public IActionResult Register(String name,String email,String password)
     {
         // Console.WriteLine(status);
-        Console.WriteLine("status");
-        Console.WriteLine(name);
+        // Console.WriteLine("status");
+        // Console.WriteLine(name);
         bool status=Userservice.RegisterUser(name,email,password);
         
         if(status){
@@ -68,8 +68,7 @@ public class UserController : Controller
         }
         else{
                 return View();
-        }
-        
+        }  
     }
 
     [HttpPost]
@@ -85,8 +84,6 @@ public class UserController : Controller
         }
         return View();
     }
-
-
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

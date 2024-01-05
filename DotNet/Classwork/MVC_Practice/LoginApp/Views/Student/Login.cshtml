@@ -1,0 +1,12 @@
+<h1>Welcome to Login Page</h1>
+@{
+    if(ViewData["str"]!=null){
+        string s = ViewBag.str as string;
+        <b>@s</b>
+    }
+}
+<form method="post">
+Email : <input type="text" name=email placeholder="enter email"><br><br>
+Password : <input type="text" name=pwd placeholder="enter password"><br>
+<button type="submit">Login</button>
+</form>

@@ -62,7 +62,7 @@ public class DBManager{
         MySqlConnection con=new MySqlConnection();
         con.ConnectionString= conString;
         con.Open();
-        string query = "INSERT INTO Users (Username, Password, Email) VALUES ('@name', '@email', '@password')";
+        string query = "INSERT INTO Users (Username, Password, Email) VALUES (@name,@email,@password)";
         try{
             MySqlCommand cmd = new MySqlCommand(query,con);
             cmd.Parameters.AddWithValue("@name",name);

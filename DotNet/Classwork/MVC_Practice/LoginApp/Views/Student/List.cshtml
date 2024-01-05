@@ -1,0 +1,33 @@
+@using BOL;
+
+@* @{
+    List<Student> list = ViewData["list"] as List<Student>;
+} *@
+@{
+    if(ViewBag.str!=null){
+        string s = ViewBag.str as string;
+        <b>@s</b>
+    }
+}
+<h2>Student List</h2>
+
+<table>
+    <thead>
+        <th>
+            <tr>
+                <td><b>StudentId</b></td><td><b>StudentName</b></td><td><b>StudentEmail</b></td><td><b>Edit</b></td><td><b>Delete</b></td>
+            </tr>
+        </th>
+    </thead>
+    <tbody>
+        @foreach (var student in Model){
+            <tr>
+            <td>@student.StudentId</td><td>@student.StudentName</td><td>@student.Email</td>
+            <td><a href="/Student/Edit/@student.StudentId">Edit</a></td>
+             
+             <td><a href="/Student/Delete/@student.StudentId">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
