@@ -42,6 +42,7 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/IET/Desktop/Github/IET_Buddies/DotNet/Classwork/WebSolution/LoginAPP/Views/User/Insert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbnNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,6 +52,9 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/IET/Desktop/Github/IET_Buddies/DotNet/Classwork/WebSolution/LoginAPP/Views/User/Login.cshtml]
+=======
+[C:/Users/Dell/Desktop/Git_N/IET_Buddies/DotNet/Classwork/WebSolution/LoginApp/Views/User/Login.cshtml]
+>>>>>>> 5bb577ca63df728dd49b4bb08e14f9b89a38c782
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 

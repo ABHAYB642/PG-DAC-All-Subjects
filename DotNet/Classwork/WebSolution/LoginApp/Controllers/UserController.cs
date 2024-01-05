@@ -85,8 +85,8 @@ public class UserController : Controller
     public IActionResult Register(String name,String email,String password)
     {
         // Console.WriteLine(status);
-        Console.WriteLine("status");
-        Console.WriteLine(name);
+        // Console.WriteLine("status");
+        // Console.WriteLine(name);
         bool status=Userservice.RegisterUser(name,email,password);
         
         if(status){
@@ -94,8 +94,7 @@ public class UserController : Controller
         }
         else{
                 return View();
-        }
-        
+        }  
     }
 
     [HttpPost]
@@ -112,6 +111,7 @@ public class UserController : Controller
         return View();
     }
 
+<<<<<<< HEAD
     [HttpGet]
     public IActionResult Delete(int id)
     {
@@ -132,6 +132,8 @@ public class UserController : Controller
     }
 
 
+=======
+>>>>>>> 5bb577ca63df728dd49b4bb08e14f9b89a38c782
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
