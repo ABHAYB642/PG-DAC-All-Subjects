@@ -33,5 +33,6 @@
 *.class
 
 #Bin and Bootstrap
-/dotnet/bin/
-/dotnet/bootstrap/
+/dotnet/**/bin/
+/dotnet/**/bootstrap/
+
