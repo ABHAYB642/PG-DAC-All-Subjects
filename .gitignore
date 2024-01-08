@@ -31,3 +31,7 @@
 *.out
 *.app
 *.class
+
+#Bin and Bootstrap
+/dotnet/bin/
+/dotnet/bootstrap/
