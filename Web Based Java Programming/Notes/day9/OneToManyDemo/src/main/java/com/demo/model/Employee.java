@@ -1,6 +1,7 @@
 package com.demo.model;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -19,7 +20,6 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-	
 	public Employee(int empid, String ename, double sal) {
 		super();
 		this.empid = empid;

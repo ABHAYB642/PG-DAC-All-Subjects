@@ -2,6 +2,7 @@ package com.demo.model;
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -12,7 +13,8 @@ public class Address {
 	private int addrid;
 	private String street;
 	private String city;
-	@OneToOne(mappedBy ="addr" )
+	@OneToOne
+	@JoinColumn(name="userrid")
 	private MyUser u;
 	public Address() {
 		super();

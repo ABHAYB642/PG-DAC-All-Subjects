@@ -18,8 +18,8 @@ public class TestOneToMany {
 	public static void main(String[] args) {
 		Employee e1=new Employee(12,"xxx",3456);
 		Employee e2=new Employee(13,"yyyy",5555);
-		Employee e3=new Employee(14,"zzzzz",5656);
-		Employee e4=new Employee(15,"pppp",4444);
+		Employee e3=new Employee(15,"zzzzz",5656);
+		Employee e4=new Employee(16,"pppp",4444);
 		Set<Employee> eset1=new HashSet<>();
 		eset1.add(e1);
 		eset1.add(e2);
@@ -28,8 +28,6 @@ public class TestOneToMany {
 		eset2.add(e4);
 		Department d1=new Department(10,"Hr","Pune",eset1);
 		Department d2=new Department(11,"Purchase","Mumbai",eset2);
-		e1.setDept(d1);
-		e2.setDept(d1);
 		e3.setDept(d2);
 		e4.setDept(d2);
 		SessionFactory sf=new Configuration().configure().buildSessionFactory();

@@ -18,6 +18,7 @@ public class TestRetrievedata {
 		Address a1=sess.get(Address.class, 1);
 		System.out.println("before");
 		System.out.println(a1);
+		System.out.println(a1.getU());
 		//System.out.println(u1.getUname());
 		//System.out.println("after name");
 		//System.out.println(u1.getAddr());
