@@ -36,3 +36,7 @@
 /dotnet/**/bin/
 /dotnet/**/bootstrap/
 
+#Target Maven
+/Web Based Java Programming/**/target/
+
+
